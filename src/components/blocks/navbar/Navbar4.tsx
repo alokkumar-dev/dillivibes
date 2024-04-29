@@ -29,14 +29,14 @@ const Navbar4: FC<Navbar4Props> = ({ navClassName, onePageDemo }) => {
 
       <nav ref={navbarRef} className={sticky ? fixedClassName : navClassName}>
         <div className="container flex-lg-column">
-          <div className="topbar d-flex flex-row justify-content-lg-center align-items-center">
+          {/* <div className="topbar d-flex flex-row justify-content-lg-center align-items-center">
             <div className="navbar-brand">
               <NextLink
                 href="/"
                 title={<img alt="logo" src="/img/logo-dark.png" srcSet="/img/logo-dark@2x.png 2x" />}
               />
             </div>
-          </div>
+          </div> */}
 
           <div className="navbar-collapse-wrapper bg-white d-flex flex-row align-items-center justify-content-between">
             {/* ============= left side content ============= */}
