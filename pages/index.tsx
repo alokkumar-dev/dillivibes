@@ -5,7 +5,6 @@ import useLightBox from 'hooks/useLightBox';
 // -------- custom component -------- //
 import { Hero24 } from 'components/blocks/hero';
 import { About25 } from 'components/blocks/about';
-// import { Navbar4 } from 'components/blocks/navbar';
 import { Navbar } from 'components/blocks/navbar';
 import { Banner2 } from 'components/blocks/banner';
 import { Footer15 } from 'components/blocks/footer';
@@ -24,9 +23,6 @@ const Home: NextPage = () => {
       <PageProgress />
 
       {/* ========== header ========== */}
-      {/* <header className="wrapper bg-gray">
-        <Navbar4 onePageDemo />
-      </header> */}
 
       <header className="w-100">
         <Navbar
