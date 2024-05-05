@@ -4,13 +4,13 @@ import { Fragment } from 'react';
 import useLightBox from 'hooks/useLightBox';
 // -------- custom component -------- //
 import { Hero24 } from 'components/blocks/hero';
-import { About25 } from 'components/blocks/about';
+import { AboutUs } from 'components/blocks/about';
 import { Navbar } from 'components/blocks/navbar';
 import { Banner2 } from 'components/blocks/banner';
 import { Footer15 } from 'components/blocks/footer';
 import { Contact12 } from 'components/blocks/contact';
 import { Services27 } from 'components/blocks/services';
-import { Portfolio5 } from 'components/blocks/portfolio';
+import { Portfolio15, Portfolio5 } from 'components/blocks/portfolio';
 import { Testimonial19 } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
 
@@ -43,6 +43,8 @@ const Home: NextPage = () => {
         {/* ========== our service section ========== */}
         <Services27 />
 
+        <Portfolio15 />
+
         {/* ========== banner section ========== */}
         <Banner2 />
 
@@ -53,7 +55,7 @@ const Home: NextPage = () => {
         <Testimonial19 />
 
         {/* ========== about me section ========== */}
-        <About25 />
+        <AboutUs />
 
         {/* ========== contact section ========== */}
         <Contact12 />

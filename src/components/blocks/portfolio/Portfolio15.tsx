@@ -3,6 +3,7 @@ import Carousel from 'components/reuseable/Carousel';
 import NextLink from 'components/reuseable/links/NextLink';
 
 const Portfolio15: FC = () => {
+  console.log("Portfolio15")
   return (
     <Fragment>
       <div className="container">

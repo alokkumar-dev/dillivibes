@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import LinkType from 'types/link';
 import { FC, Fragment, ReactElement, useRef } from 'react';
 // -------- custom hook -------- //
 import useSticky from 'hooks/useSticky';
@@ -7,17 +6,6 @@ import useNestedDropdown from 'hooks/useNestedDropdown';
 // -------- custom component -------- //
 import NextLink from 'components/reuseable/links/NextLink';
 import SocialLinks from 'components/reuseable/SocialLinks';
-import ListItemLink from 'components/reuseable/links/ListItemLink';
-
-// -------- partial header component -------- //
-import Info from './partials/Info';
-import Search from './partials/Search';
-import Social from './partials/Social';
-import Signin from './partials/Signin';
-import Signup from './partials/Signup';
-import Language from './partials/Language';
-import MiniCart from './partials/MiniCart';
-// -------- data -------- //
 
 
 // ===================================================================
@@ -37,7 +25,7 @@ type NavbarProps = {
 // ===================================================================
 
 const Navbar: FC<NavbarProps> = (props) => {
-  const { navClassName, info, search, social, language, button, cart, fancy, navOtherClass, stickyBox, logoAlt } =
+  const { navClassName, fancy, navOtherClass, stickyBox, logoAlt } =
     props;
 
   useNestedDropdown();
@@ -48,13 +36,6 @@ const Navbar: FC<NavbarProps> = (props) => {
   const logo = sticky ? 'logo-dark' : logoAlt ?? 'logo-dark';
   // dynamically added navbar classname
   const fixedClassName = 'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed';
-
-  // render inner nav item links
-  const renderLinks = (links: LinkType[]) => {
-    return links.map((item) => (
-      <ListItemLink href={item.url} title={item.title} linkClassName="dropdown-item" key={item.id} />
-    ));
-  };
 
   // all main header contents
   const headerContent = (
@@ -73,32 +54,33 @@ const Navbar: FC<NavbarProps> = (props) => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link href={'#'} className="nav-link">
-                Pages
+                Dinning
               </Link>
             </li>
             <li className="nav-item">
               <Link href={'#'} className="nav-link">
-                Pages
+                Weddings
               </Link>
             </li>
             <li className="nav-item">
               <Link href={'#'} className="nav-link">
-                Pages
+                Gift Cards
               </Link>
             </li>
             <li className="nav-item">
               <Link href={'#'} className="nav-link">
-                Pages
+              Birthday
               </Link>
             </li>
             <li className="nav-item">
               <Link href={'#'} className="nav-link">
-                Pages
+              Roomes
               </Link>
             </li>
+           
             <li className="nav-item">
               <Link href={'#'} className="nav-link">
-                Pages
+                About Us
               </Link>
             </li>
           </ul>
@@ -108,7 +90,7 @@ const Navbar: FC<NavbarProps> = (props) => {
             <div>
               <NextLink title="info@email.com" className="link-inverse" href="mailto:first.last@email.com" />
               <br />
-              <NextLink href="tel:0123456789" title="00 (123) 456 78 90" />
+              <NextLink href="tel:1234567890" title="1234567890" />
               <br />
               <SocialLinks />
             </div>
@@ -119,47 +101,6 @@ const Navbar: FC<NavbarProps> = (props) => {
       {/* ============= right side header content ============= */}
       <div className={navOtherClass}>
         <ul className="navbar-nav flex-row align-items-center ms-auto">
-          {/* ============= language dropdwown ============= */}
-          {language && <Language />}
-
-          {/* ============= info button ============= */}
-          {info && (
-            <li className="nav-item">
-              <a className="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info">
-                <i className="uil uil-info-circle" />
-              </a>
-            </li>
-          )}
-
-          {/* ============= search icon button ============= */}
-          {search && (
-            <li className="nav-item">
-              <a className="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search">
-                <i className="uil uil-search" />
-              </a>
-            </li>
-          )}
-
-          {/* ============= contact button ============= */}
-          {button && <li className="nav-item d-none d-md-block">{button}</li>}
-
-          {/* ============= shopping cart button ============= */}
-          {cart && (
-            <li className="nav-item">
-              <a
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvas-cart"
-                className="nav-link position-relative d-flex flex-row align-items-center"
-              >
-                <i className="uil uil-shopping-cart" />
-                <span className="badge badge-cart bg-primary">3</span>
-              </a>
-            </li>
-          )}
-
-          {/* ============= social icons link ============= */}
-          {social && <Social />}
-
           {/* ============= humburger button for small device ============= */}
           <li className="nav-item d-lg-none">
             <button data-bs-toggle="offcanvas" data-bs-target="#offcanvas-nav" className="hamburger offcanvas-nav-btn">
@@ -187,20 +128,6 @@ const Navbar: FC<NavbarProps> = (props) => {
         )}
       </nav>
 
-      {/* ============= signin modal ============= */}
-      <Signin />
-
-      {/* ============= signup modal ============= */}
-      <Signup />
-
-      {/* ============= info sidebar ============= */}
-      {info && <Info />}
-
-      {/* ============= show search box ============= */}
-      {search && <Search />}
-
-      {/* ============= cart sidebar ============= */}
-      {cart && <MiniCart />}
     </Fragment>
   );
 };

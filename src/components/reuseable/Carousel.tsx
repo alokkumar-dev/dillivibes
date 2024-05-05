@@ -16,8 +16,8 @@ interface CarouselProps extends SwiperProps {
 const Carousel: FC<CarouselProps> = ({
   children,
   slideClassName,
-  spaceBetween = 30,
-  slidesPerView = 3,
+  spaceBetween = 3,
+  slidesPerView = 1,
   pagination = true,
   navigation = true,
   ...others
