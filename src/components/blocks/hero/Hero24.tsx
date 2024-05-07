@@ -21,7 +21,7 @@ const Hero24: FC = () => {
   return (
     <section id="home">
       <div className="wrapper bg-gray overflow-hidden">
-        <div className="container-fluid px-xl-0 pt-6 pb-10">
+        <div className="container-fluid px-xl-0 pt-0 pb-10">
           <div className="swiper-container swiper-auto">
             <Carousel className="overflow-visible" grabCursor slidesPerView="auto" centeredSlides loop>
               {images.map((item) => (
