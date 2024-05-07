@@ -10,6 +10,8 @@ interface CarouselProps extends SwiperProps {
   slideClassName?: string;
   children: ReactElement[];
   slidesPerView?: number | 'auto';
+  autoSlideDelay?: number;
+  slideSpeed?: number;
 }
 // ==================================================================
 
@@ -19,6 +21,8 @@ const Carousel: FC<CarouselProps> = ({
   spaceBetween = 3,
   slidesPerView = 1,
   pagination = true,
+  autoSlideDelay = 2000,
+  slideSpeed = 1000, // Set slideSpeed to 1000ms for smoother transition
   navigation = true,
   ...others
 }) => {
@@ -33,6 +37,8 @@ const Carousel: FC<CarouselProps> = ({
         slidesPerView={slidesPerView}
         modules={[Pagination, Navigation, Autoplay]}
         navigation={navigation ? { prevEl, nextEl } : false}
+        autoplay={{ delay: autoSlideDelay }}
+        speed={slideSpeed}
         pagination={pagination ? { clickable: true, el: paginationEl } : false}
         {...others}
       >

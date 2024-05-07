@@ -7,7 +7,7 @@ import { Hero24 } from 'components/blocks/hero';
 import { AboutUs } from 'components/blocks/about';
 import { Navbar } from 'components/blocks/navbar';
 import { Banner2 } from 'components/blocks/banner';
-import { Footer15 } from 'components/blocks/footer';
+import { Footer8 } from 'components/blocks/footer';
 import { Contact12 } from 'components/blocks/contact';
 import { Services27 } from 'components/blocks/services';
 import { Portfolio15, Portfolio5 } from 'components/blocks/portfolio';
@@ -61,8 +61,8 @@ const Home: NextPage = () => {
         <Contact12 />
       </main>
 
-      {/* ========== footer section ========== */}
-      <Footer15 />
+       {/* ========== footer section ========== */}
+       <Footer8 />
     </Fragment>
   );
 };

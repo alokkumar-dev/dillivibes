@@ -3,7 +3,6 @@ import Carousel from 'components/reuseable/Carousel';
 import NextLink from 'components/reuseable/links/NextLink';
 
 const Portfolio15: FC = () => {
-  console.log("Portfolio15")
   return (
     <Fragment>
       <div className="container">
@@ -31,9 +30,9 @@ const Portfolio15: FC = () => {
           wrapperClass="swiper-wrapper ticker"
           className="overflow-visible pe-none"
         >
-          {[8, 9, 10, 11, 12, 13, 14].map((num) => (
+          {[1, 6, 7, 6, 1, 6].map((num) => (
             <figure className="rounded-xl shadow-xl" key={num}>
-              <img src={`/img/photos/ma${num}.jpg`} srcSet={`/img/photos/ma${num}@2x.jpg 2x`} alt="" />
+              <img src={`/img/photos/pf${num}.jpg`} srcSet={`/img/photos/pf${num}.jpg`} alt="" />
             </figure>
           ))}
         </Carousel>
@@ -53,15 +52,15 @@ const Portfolio15: FC = () => {
           className="overflow-visible pe-none"
           dir="rtl"
         >
-          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+          {[6, 1, 6, 7, 6, 1].map((num) => (
             <figure className="rounded-xl shadow-xl" key={num}>
-              <img src={`/img/photos/ma${num}.jpg`} srcSet={`/img/photos/ma${num}@2x.jpg 2x`} alt="" />
+              <img src={`/img/photos/pf${num}.jpg`} srcSet={`/img/photos/pf${num}.jpg 2x`} alt="" />
             </figure>
           ))}
         </Carousel>
       </div>
 
-      <div className="text-center mt-8 mb-15 mb-md-18 mb-lg-25">
+      <div className="text-center mt-8 mb-15">
         <NextLink href="#" title="See Our Projects" className="btn btn-lg btn-primary rounded-xl" />
       </div>
     </Fragment>

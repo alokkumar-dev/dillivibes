@@ -73,8 +73,8 @@ const Navbar: FC<NavbarProps> = (props) => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={'#'} className="nav-link">
-              Roomes
+              <Link href={'/gallery'} className="nav-link">
+              Gallery
               </Link>
             </li>
            
