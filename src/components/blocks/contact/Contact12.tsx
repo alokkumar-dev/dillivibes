@@ -1,16 +1,21 @@
-import { FC } from 'react';
+import { FC, Fragment } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
+import { Footer8 } from 'components/blocks/footer';
+import PageProgress from 'components/common/PageProgress';
+import { Navbar } from 'components/blocks/navbar';
+import NextLink from 'components/reuseable/links/NextLink';
 
 const Contact12: FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors }, reset 
+    formState: { errors },
+    reset
   } = useForm();
 
   const onSubmit = (data: any) => {
-    if (data?.name != '' && data?.email != '' && data?.message != '') {
+    if (data?.name != '' && data?.email != '' && data?.message != '' && data?.phoneno !='') {
       const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
       const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
       const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
@@ -19,6 +24,7 @@ const Contact12: FC = () => {
       const templateParams = {
         from_name: data?.name,
         from_email: data?.email,
+        from_phoneno: data?.phoneno,
         to_name: 'Dilli Vibes Team',
         message: data?.message
       };
@@ -38,91 +44,184 @@ const Contact12: FC = () => {
   };
 
   return (
-    <section id="pricing">
-      <div
-        className="wrapper image-wrapper bg-image bg-overlay"
-        style={{ backgroundImage: 'url(/img/photos/bg36.jpg)' }}
-      >
-        <div className="container py-15 py-md-17">
-          <div className="row">
-            <div className="col-xl-9 mx-auto">
-              <div className="card border-0 bg-white-900">
-                <div className="card-body py-lg-13 px-lg-16">
-                  <h2 className="display-5 mb-3 text-center">Contact with DilliVibes</h2>
-                  <p className="lead fs-lg text-center mb-10">
-                    For more information please get in touch using the form below:
-                  </p>
-                  <form
-                    className="contact-form needs-validation"
-                    method="post"
-                    noValidate
-                    onSubmit={handleSubmit(onSubmit)}
-                  >
-                    <div className="messages"></div>
-                    <div className="row gx-4">
-                      <div className="col-md-6">
-                        <div className="form-floating mb-4">
-                          <input
-                            required
-                            type="text"
-                            id="form_name"
-                            placeholder="Name"
-                            {...register('name', { required: true })}
-                            className="form-control bg-white-700 border-0"
-                          />
-                          {errors.name && <p>Last name is required.</p>}
-                          <label htmlFor="form_name">Name *</label>
-                          <div className="valid-feedback">Looks good!</div>
-                          <div className="invalid-feedback">Please enter your name.</div>
+    <Fragment>
+      <section id="pricing">
+        <div
+          className="wrapper image-wrapper bg-image bg-overlay"
+          style={{ backgroundImage: 'url(/img/photos/bg36.jpg)' }}
+        >
+          <div className="container py-15 py-md-17">
+            <div className="row">
+              <div className="col-xl-9 mx-auto">
+                <div className="card border-0 bg-white-900">
+                  <div className="card-body py-lg-13 px-lg-16">
+                    <h2 className="display-5 mb-3 text-center">Contact with DilliVibes</h2>
+                    <p className="lead fs-lg text-center mb-10">
+                      For more information please get in touch using the form below:
+                    </p>
+                    <form
+                      className="contact-form needs-validation"
+                      method="post"
+                      noValidate
+                      onSubmit={handleSubmit(onSubmit)}
+                    >
+                      <div className="messages"></div>
+                      <div className="row gx-4">
+                        <div className="col-md-6">
+                          <div className="form-floating mb-4">
+                            <input
+                              required
+                              type="text"
+                              id="form_name"
+                              placeholder="Name"
+                              {...register('name', { required: true })}
+                              className="form-control bg-white-700 border-0"
+                            />
+                            {errors.name && <p>Name is required.</p>}
+                            <label htmlFor="form_name">Name *</label>
+                            <div className="valid-feedback">Looks good!</div>
+                            <div className="invalid-feedback">Please enter your name.</div>
+                          </div>
+                        </div>
+
+                        <div className="col-md-6">
+                          <div className="form-floating mb-4">
+                            <input
+                              required
+                              type="email"
+                              id="form_email"
+                              {...register('email', { required: true })}
+                              placeholder="alok@example.com"
+                              className="form-control bg-white-700 border-0"
+                            />
+                            {errors.email && <p>Email is required.</p>}
+                            <label htmlFor="form_email">Email *</label>
+                            <div className="valid-feedback">Looks good!</div>
+                            <div className="invalid-feedback">Please provide a valid email address.</div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="form-floating mb-4">
+                            <input
+                              required
+                              type="phoneno"
+                              id="form_phoneno"
+                              {...register('phoneno', { required: true })}
+                              placeholder="Contact No"
+                              className="form-control bg-white-700 border-0"
+                            />
+                            {errors.phoneno && <p>Phone No is required.</p>}
+                            <label htmlFor="Contact_No">Contact No *</label>
+                            <div className="valid-feedback">Looks good!</div>
+                            <div className="invalid-feedback">Please provide a valid email address.</div>
+                          </div>
+                        </div>
+
+                        <div className="col-12">
+                          <div className="form-floating mb-4">
+                            <textarea
+                              required
+                              id="form_message"
+                              placeholder="Your message"
+                              className="form-control bg-white-700 border-0"
+                              style={{ height: 150 }}
+                              {...register('message', { required: true })}
+                            />
+                            {errors.message && <p>Message is required.</p>}
+                            <label htmlFor="form_message">Message *</label>
+                            <div className="valid-feedback">Looks good!</div>
+                            <div className="invalid-feedback">Please enter your messsage.</div>
+                          </div>
+                        </div>
+
+                        <div className="col-12 text-center">
+                          <input type="submit" className="btn btn-primary rounded-pill btn-send" value="Send message" />
                         </div>
                       </div>
-
-                      <div className="col-md-6">
-                        <div className="form-floating mb-4">
-                          <input
-                            required
-                            type="email"
-                            id="form_email"
-                            {...register('email', { required: true })}
-                            placeholder="jane.doe@example.com"
-                            className="form-control bg-white-700 border-0"
-                          />
-                          {errors.email && <p>Last email is required.</p>}
-                          <label htmlFor="form_email">Email *</label>
-                          <div className="valid-feedback">Looks good!</div>
-                          <div className="invalid-feedback">Please provide a valid email address.</div>
-                        </div>
-                      </div>
-
-                      <div className="col-12">
-                        <div className="form-floating mb-4">
-                          <textarea
-                            required
-                            id="form_message"
-                            placeholder="Your message"
-                            className="form-control bg-white-700 border-0"
-                            style={{ height: 150 }}
-                            {...register('message', { required: true })}
-                          />
-                          {errors.message && <p>Last message is required.</p>}
-                          <label htmlFor="form_message">Message *</label>
-                          <div className="valid-feedback">Looks good!</div>
-                          <div className="invalid-feedback">Please enter your messsage.</div>
-                        </div>
-                      </div>
-
-                      <div className="col-12 text-center">
-                        <input type="submit" className="btn btn-primary rounded-pill btn-send" value="Send message" />
-                      </div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <div className="wrapper bg-light angled upper-end mt-20 w-90">
+          <div className="container">
+            {/* ========== contact info section ========== */}
+            <div className="row mb-14 mb-md-16">
+              <div className="col-xl-10 mx-auto mt-n19">
+                <div className="card">
+                  <div className="row gx-0">
+                    <div className="col-lg-6 align-self-stretch">
+                      <div className="map map-full rounded-top rounded-lg-start">
+                      
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.0923689088986!2d78.38835827458117!3d28.83610987480853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390b090071c4b12f%3A0x18d58e6b8c8f297e!2z4KSm4KS_4KSy4KWN4KSy4KWAIOCkteCkv-CkrOClh-CkuA!5e0!3m2!1shi!2sin!4v1715522971227!5m2!1shi!2sin" width="600" height="450" 
+                        style={{ width: '100%', height: '100%', border: 0 }}
+                        allowFullScreen loading="lazy" referrerPolicy=''></iframe>
+                        
+
+                      </div>
+                    </div>
+
+                    <div className="col-lg-6">
+                      <div className="p-10 p-md-11 p-lg-14">
+                        <div className="d-flex flex-row">
+                          <div>
+                            <div className="icon text-primary fs-28 me-4 mt-n1">
+                              <i className="uil uil-location-pin-alt" />
+                            </div>
+                          </div>
+                          <div className="align-self-start justify-content-start">
+                            <h5 className="mb-1">Address</h5>
+                            <address>
+                            NH-9, Road, Delhi, Atrasi, Uttar Pradesh-244221, India
+                            </address>
+                          </div>
+                        </div>
+
+                        <div className="d-flex flex-row">
+                          <div>
+                            <div className="icon text-primary fs-28 me-4 mt-n1">
+                              <i className="uil uil-phone-volume" />
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="mb-1">Phone</h5>
+                           
+                            
+         
+              <NextLink title="7055101235" href="tel:7055101235" />
+              <br/>
+              <NextLink title="7817851235" href="tel:7817851235" />
+                        
+                          </div>
+                        </div>
+
+                        <div className="d-flex flex-row">
+                          <div>
+                            <div className="icon text-primary fs-28 me-4 mt-n1">
+                              <i className="uil uil-envelope" />
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="mb-1">E-mail</h5>
+                            <p className="mb-0">
+                       
+                              <NextLink title="dillivibes23@gmail.com" href="mailto:dillivibes23@gmail.com" />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </Fragment>
   );
 };
 

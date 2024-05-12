@@ -27,7 +27,7 @@ const Footer8: FC = () => {
           <div className="col-md-4 col-lg-3">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Get in Touch</h4>
-              <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
+              <address className="pe-xl-15 pe-xxl-17">NH-9, Road, Delhi, Atrasi, Uttar Pradesh-244221, India</address>
               <NextLink title="dillivibes23@gmail.com" href="mailto:dillivibes23@gmail.com" />
               <br /> 
               <NextLink title="7055101235" href="tel:7055101235" />
