@@ -13,6 +13,7 @@ import { Services27 } from 'components/blocks/services';
 import { Portfolio15, Portfolio5 } from 'components/blocks/portfolio';
 import { Testimonial19 } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
+import WhatsAppButton from 'components/common/WhatsAppButton';
 
 const Home: NextPage = () => {
   // lighbox hook called
@@ -40,8 +41,8 @@ const Home: NextPage = () => {
         {/* ========== hero section ========== */}
         <Hero24 />
 
-        {/* ========== our service section ========== */}
-        <Services27 />
+        {/* ========== about me section ========== */}
+        <AboutUs />
 
         <Portfolio15 />
 
@@ -54,15 +55,16 @@ const Home: NextPage = () => {
         {/* ========== happy customer section ========== */}
         <Testimonial19 />
 
-        {/* ========== about me section ========== */}
-        <AboutUs />
+        {/* ========== our service section ========== */}
+        <Services27 />
 
         {/* ========== contact section ========== */}
         <Contact12 />
       </main>
 
-       {/* ========== footer section ========== */}
-       <Footer8 />
+      {/* ========== footer section ========== */}
+      <Footer8 />
+      <WhatsAppButton />
     </Fragment>
   );
 };

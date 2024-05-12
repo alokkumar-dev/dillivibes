@@ -432,3 +432,15 @@
 .swiper-wrapper.ticker {
   transition-timing-function: linear !important;
 }
+
+
+.container-fluid .swiper-container .slide-banner-box{
+  height: 400px;
+  width: 100%;
+  margin: auto;
+  object-fit: contain;
+  .sliding-img{
+    width: 100%;
+    height: 100%;
+  }
+}

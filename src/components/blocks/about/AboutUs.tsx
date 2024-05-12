@@ -13,7 +13,7 @@ const AboutUs: FC = () => {
                 <Image
                   width={1000}
                   height={850}
-                  src="/img/photos/about30.jpg"
+                  src="/img/photos/about30.jpeg"
                   alt=""
                   style={{ width: '100%', height: 'auto' }}
                 />
