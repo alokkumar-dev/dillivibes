@@ -59,7 +59,7 @@ const Navbar: FC<NavbarProps> = (props) => {
             </li>
             <li className="nav-item">
               <Link href={'#'} className="nav-link">
-                Weddings
+              Birth Day
               </Link>
             </li>
             <li className="nav-item">
@@ -68,8 +68,8 @@ const Navbar: FC<NavbarProps> = (props) => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={'#'} className="nav-link">
-              Birthday
+              <Link href={'/contactus'} className="nav-link">
+              Contact US
               </Link>
             </li>
             <li className="nav-item">

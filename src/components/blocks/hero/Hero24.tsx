@@ -8,12 +8,11 @@ const images = [
   // 'https://png.pngtree.com/png-clipart/20220502/original/pngtree-tourist-giving-rating-stars-to-hotel-banner-png-image_7643047.png',
   // 'https://png.pngtree.com/png-clipart/20220502/original/pngtree-tourist-giving-rating-stars-to-hotel-banner-png-image_7643047.png'
 
-  '/img/slideBanner/slide1.jpeg',
-  '/img/slideBanner/slide2.jpeg',
-  '/img/slideBanner/slide3.jpeg',
-  '/img/slideBanner/slide4.jpeg',
-  '/img/slideBanner/slide5.jpeg',
-  '/img/slideBanner/slide6.jpeg'
+  'https://i.ibb.co/12rN5QR/New-Diet-Program-1.png',
+  'https://i.ibb.co/12rN5QR/New-Diet-Program-1.png',
+  'https://i.ibb.co/12rN5QR/New-Diet-Program-1.png',
+  'https://i.ibb.co/12rN5QR/New-Diet-Program-1.png',
+  'https://i.ibb.co/12rN5QR/New-Diet-Program-1.png',
 ];
 
 
