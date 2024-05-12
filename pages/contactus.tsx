@@ -15,7 +15,7 @@ const Contactus: FC = () => {
   } = useForm();
 
   const onSubmit = (data: any) => {
-    if (data?.name != '' && data?.email != '' && data?.message != '') {
+    if (data?.name != '' && data?.email != '' && data?.message != '' && data?.phoneno !='') {
       const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
       const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
       const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
@@ -24,6 +24,7 @@ const Contactus: FC = () => {
       const templateParams = {
         from_name: data?.name,
         from_email: data?.email,
+        from_phoneno: data?.phoneno,
         to_name: 'Dilli Vibes Team',
         message: data?.message
       };
@@ -85,7 +86,7 @@ const Contactus: FC = () => {
                               {...register('name', { required: true })}
                               className="form-control bg-white-700 border-0"
                             />
-                            {errors.name && <p>Last name is required.</p>}
+                            {errors.name && <p>Name is required.</p>}
                             <label htmlFor="form_name">Name *</label>
                             <div className="valid-feedback">Looks good!</div>
                             <div className="invalid-feedback">Please enter your name.</div>
@@ -99,11 +100,27 @@ const Contactus: FC = () => {
                               type="email"
                               id="form_email"
                               {...register('email', { required: true })}
-                              placeholder="jane.doe@example.com"
+                              placeholder="alok@example.com"
                               className="form-control bg-white-700 border-0"
                             />
-                            {errors.email && <p>Last email is required.</p>}
+                            {errors.email && <p>Email is required.</p>}
                             <label htmlFor="form_email">Email *</label>
+                            <div className="valid-feedback">Looks good!</div>
+                            <div className="invalid-feedback">Please provide a valid email address.</div>
+                          </div>
+                        </div>
+                        <div className="col-md-6">
+                          <div className="form-floating mb-4">
+                            <input
+                              required
+                              type="phoneno"
+                              id="form_phoneno"
+                              {...register('phoneno', { required: true })}
+                              placeholder="Contact No"
+                              className="form-control bg-white-700 border-0"
+                            />
+                            {errors.phoneno && <p>Phone No is required.</p>}
+                            <label htmlFor="Contact_No">Contact No *</label>
                             <div className="valid-feedback">Looks good!</div>
                             <div className="invalid-feedback">Please provide a valid email address.</div>
                           </div>
@@ -119,7 +136,7 @@ const Contactus: FC = () => {
                               style={{ height: 150 }}
                               {...register('message', { required: true })}
                             />
-                            {errors.message && <p>Last message is required.</p>}
+                            {errors.message && <p>Message is required.</p>}
                             <label htmlFor="form_message">Message *</label>
                             <div className="valid-feedback">Looks good!</div>
                             <div className="invalid-feedback">Please enter your messsage.</div>
@@ -138,7 +155,81 @@ const Contactus: FC = () => {
           </div>
         </div>
       </section>
+      <div className="wrapper bg-light angled upper-end mt-20 w-90">
+          <div className="container">
+            {/* ========== contact info section ========== */}
+            <div className="row mb-14 mb-md-16">
+              <div className="col-xl-10 mx-auto mt-n19">
+                <div className="card">
+                  <div className="row gx-0">
+                    <div className="col-lg-6 align-self-stretch">
+                      <div className="map map-full rounded-top rounded-lg-start">
+                      
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.0923689088986!2d78.38835827458117!3d28.83610987480853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390b090071c4b12f%3A0x18d58e6b8c8f297e!2z4KSm4KS_4KSy4KWN4KSy4KWAIOCkteCkv-CkrOClh-CkuA!5e0!3m2!1shi!2sin!4v1715522971227!5m2!1shi!2sin" width="600" height="450" 
+                        style={{ width: '100%', height: '100%', border: 0 }}
+                        allowFullScreen loading="lazy" referrerPolicy=''></iframe>
+                        
 
+                      </div>
+                    </div>
+
+                    <div className="col-lg-6">
+                      <div className="p-10 p-md-11 p-lg-14">
+                        <div className="d-flex flex-row">
+                          <div>
+                            <div className="icon text-primary fs-28 me-4 mt-n1">
+                              <i className="uil uil-location-pin-alt" />
+                            </div>
+                          </div>
+                          <div className="align-self-start justify-content-start">
+                            <h5 className="mb-1">Address</h5>
+                            <address>
+                            NH-9, Road, Delhi, Atrasi, Uttar Pradesh 244221
+                            </address>
+                          </div>
+                        </div>
+
+                        <div className="d-flex flex-row">
+                          <div>
+                            <div className="icon text-primary fs-28 me-4 mt-n1">
+                              <i className="uil uil-phone-volume" />
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="mb-1">Phone</h5>
+                           
+                            
+         
+              <NextLink title="7055101235" href="tel:7055101235" />
+              <br/>
+              <NextLink title="7817851235" href="tel:7817851235" />
+                        
+                          </div>
+                        </div>
+
+                        <div className="d-flex flex-row">
+                          <div>
+                            <div className="icon text-primary fs-28 me-4 mt-n1">
+                              <i className="uil uil-envelope" />
+                            </div>
+                          </div>
+                          <div>
+                            <h5 className="mb-1">E-mail</h5>
+                            <p className="mb-0">
+                       
+                              <NextLink title="dillivibes23@gmail.com" href="mailto:dillivibes23@gmail.com" />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       <Footer8 />
     </Fragment>
   );

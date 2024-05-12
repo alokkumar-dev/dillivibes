@@ -16,7 +16,7 @@ const Footer8: FC = () => {
               <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" />
 
               <p className="mb-4">
-                © 2022 Sandbox. <br className="d-none d-lg-block" />
+                © {new Date().getFullYear()} Dilli Vibes <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
@@ -28,8 +28,11 @@ const Footer8: FC = () => {
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Get in Touch</h4>
               <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-              <NextLink title="info@email.com" href="mailto:#" />
-              <br /> 00 (123) 456 78 90
+              <NextLink title="dillivibes23@gmail.com" href="mailto:dillivibes23@gmail.com" />
+              <br /> 
+              <NextLink title="7055101235" href="tel:7055101235" />
+              <br/>
+              <NextLink title="7817851235" href="tel:7817851235" />
             </div>
           </div>
 

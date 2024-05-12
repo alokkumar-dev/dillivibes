@@ -41,12 +41,14 @@ const Navbar: FC<NavbarProps> = (props) => {
   const headerContent = (
     <Fragment>
       <div className="navbar-brand w-100">
-        <NextLink href="/" title={<img alt="logo" src={`/img/${logo}.png`} srcSet={`/img/${logo}@2x.png 2x`} />} />
+        <NextLink href="/" 
+        // title={<img alt="logo" src={`/img/${logo}.png`} srcSet={`/img/${logo}@2x.png 2x`} />} />
+        title={<h3 className="text fs-30 m-0 p-0" style={{color: "#343f52"}}>Dilli Vibes</h3>} />
       </div>
 
       <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
         <div className="offcanvas-header d-lg-none">
-          <h3 className="text-white fs-30 mb-0">Sandbox</h3>
+          <h3 className="text-white fs-30 mb-0">Dilli Vibes</h3>
           <button type="button" aria-label="Close" data-bs-dismiss="offcanvas" className="btn-close btn-close-white" />
         </div>
 

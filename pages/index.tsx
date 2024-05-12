@@ -28,11 +28,6 @@ const Home: NextPage = () => {
       <header className="w-100">
         <Navbar
           navClassName="navbar navbar-expand-lg center-nav transparent navbar-light"
-          button={
-            <a href="https://cutt.ly/P4rW6e4" className="btn btn-primary rounded-xl" target="_blank">
-              Purchase Now
-            </a>
-          }
         />
       </header>
 
