@@ -64,11 +64,11 @@ const Navbar: FC<NavbarProps> = (props) => {
               Birth Day
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link href={'#'} className="nav-link">
                 Gift Cards
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link href={'/contactus'} className="nav-link">
               Contact US
@@ -81,7 +81,7 @@ const Navbar: FC<NavbarProps> = (props) => {
             </li>
            
             <li className="nav-item">
-              <Link href={'#'} className="nav-link">
+              <Link href={'/aboutus'} className="nav-link">
                 About Us
               </Link>
             </li>

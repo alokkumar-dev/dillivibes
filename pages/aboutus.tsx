@@ -3,6 +3,8 @@ import Image from 'next/image';
 import NextLink from 'components/reuseable/links/NextLink';
 import PageProgress from 'components/common/PageProgress';
 import { Navbar } from 'components/blocks/navbar';
+import { Footer8 } from 'components/blocks/footer';
+import SocialLinks from 'components/reuseable/SocialLinks';
 
 const AboutUs: FC = () => {
   return (
@@ -48,7 +50,8 @@ const AboutUs: FC = () => {
                 nulla sed consectetur. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur.
               </p>
 
-              <NextLink title="Learn More" href="#" className="btn btn-primary rounded-pill mt-2" />
+              {/* <NextLink title="Learn More" href="#" className="btn btn-primary rounded-pill mt-2" /> */}
+              <SocialLinks className="nav social " />
             </div>
           </div>
 
