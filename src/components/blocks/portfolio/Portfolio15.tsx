@@ -5,7 +5,7 @@ import NextLink from 'components/reuseable/links/NextLink';
 const Portfolio15: FC = () => {
   return (
     <Fragment>
-      <div className="container">
+      <div className="container mt-8">
         <div className="row">
           <div className="col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center">
             <h2 className="display-2 mb-4">Creative. Smart. Awesome.</h2>
@@ -38,7 +38,7 @@ const Portfolio15: FC = () => {
         </Carousel>
       </div>
 
-      <div className="swiper-container swiper-auto swiper-auto-xs">
+      <div className="swiper-container swiper-auto swiper-auto-xs mb-15">
         <Carousel
           loop
           updateOnWindowResize
@@ -60,9 +60,9 @@ const Portfolio15: FC = () => {
         </Carousel>
       </div>
 
-      <div className="text-center mt-8 mb-15">
+      {/* <div className="text-center mt-8 mb-15">
         <NextLink href="#" title="See Our Projects" className="btn btn-lg btn-primary rounded-xl" />
-      </div>
+      </div> */}
     </Fragment>
   );
 };

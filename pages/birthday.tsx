@@ -26,7 +26,7 @@ const Projects: NextPage = () => {
       <PageProgress />
 
       {/* ========== header section ========== */}
-      <header className="wrapper bg-gray">
+      <header className="wrapper bg-light">
         <Navbar
           language
           navClassName="navbar navbar-expand-lg center-nav navbar-light navbar-bg-light"
@@ -41,7 +41,7 @@ const Projects: NextPage = () => {
             <div className="container py-13 py-md-17 text-center">
               <div className="row">
                 <div className="col-lg-10 col-xxl-8 mx-auto">
-                  <h1 className="display-1 mb-1">Check out some of our awesome projects with creative ideas.</h1>
+                  <h1 className="display-1 mb-1">Birthday celebrations in Dilli Vibes.</h1>
                 </div>
               </div>
             </div>

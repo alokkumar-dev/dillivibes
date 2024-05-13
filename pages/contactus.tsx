@@ -48,12 +48,24 @@ const Contactus: FC = () => {
       <PageProgress />
 
       {/* ========== header section ========== */}
-      <header className="wrapper bg-soft-primary">
+      <header className="wrapper bg-light">
         <Navbar
           language
           button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
         />
       </header>
+       {/* ========== title section ========== */}
+       <section className="section-frame overflow-hidden mb-10">
+          <div className="wrapper bg-gray">
+            <div className="container py-13 py-md-17 text-center">
+              <div className="row">
+                <div className="col-lg-10 col-xxl-8 mx-auto">
+                  <h1 className="display-1 mb-1">Contact with Dilli Vibes</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       <section id="pricing">
         <div
           className="wrapper image-wrapper bg-image bg-overlay"
@@ -64,7 +76,7 @@ const Contactus: FC = () => {
               <div className="col-xl-9 mx-auto">
                 <div className="card border-0 bg-white-900">
                   <div className="card-body py-lg-13 px-lg-16">
-                    <h2 className="display-5 mb-3 text-center">Contact with DilliVibes</h2>
+                    <h2 className="display-5 mb-3 text-center">Fill out the form</h2>
                     <p className="lead fs-lg text-center mb-10">
                       For more information please get in touch using the form below:
                     </p>

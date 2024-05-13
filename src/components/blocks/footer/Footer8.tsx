@@ -13,8 +13,8 @@ const Footer8: FC = () => {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" />
-
+              {/* <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" /> */}
+              <h4 className="widget-title text-white mb-3">DILLI VIBES</h4>
               <p className="mb-4">
                 © {new Date().getFullYear()} Dilli Vibes <br className="d-none d-lg-block" />
                 All rights reserved.
@@ -23,22 +23,9 @@ const Footer8: FC = () => {
               <SocialLinks className="nav social social-white" />
             </div>
           </div>
-
-          <div className="col-md-4 col-lg-3">
+          <div className="col-md-4 col-lg-2">
             <div className="widget">
-              <h4 className="widget-title text-white mb-3">Get in Touch</h4>
-              <address className="pe-xl-15 pe-xxl-17">NH-9, Road, Delhi, Atrasi, Uttar Pradesh-244221, India</address>
-              <NextLink title="dillivibes23@gmail.com" href="mailto:dillivibes23@gmail.com" />
-              <br /> 
-              <NextLink title="7055101235" href="tel:7055101235" />
-              <br/>
-              <NextLink title="7817851235" href="tel:7817851235" />
-            </div>
-          </div>
-
-          <div className="col-md-4 col-lg-3">
-            <div className="widget">
-              <h4 className="widget-title text-white mb-3">Learn More</h4>
+              <h4 className="widget-title text-white mb-3">Quick Links</h4>
               <ul className="list-unstyled  mb-0">
                 {footerNav.map(({ title, url }) => (
                   <li key={title}>
@@ -46,6 +33,18 @@ const Footer8: FC = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          <div className="col-md-4 col-lg-4">
+            <div className="widget">
+              <h4 className="widget-title text-white mb-3">Get in Touch</h4>
+              <address className="pe-xl-15 pe-xxl-17">NH-9, Road, Delhi, Atrasi, Uttar Pradesh-244221, India</address>
+              <NextLink title="dillivibes23@gmail.com" href="mailto:dillivibes23@gmail.com" />
+              <br />
+              <NextLink title="7055101235" href="tel:7055101235" />
+              <br />
+              <NextLink title="7817851235" href="tel:7817851235" />
             </div>
           </div>
 

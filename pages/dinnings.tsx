@@ -126,7 +126,7 @@ const ProjectsFour: NextPage = () => {
               <div className="col-md-8 col-lg-7 col-xl-6 col-xxl-5">
                 <h1 className="display-1 mb-3">Projects</h1>
                 <p className="lead fs-lg pe-lg-15 pe-xxl-12">
-                  Check out some of our awesome projects with creative ideas and great design.
+                Indulge in the diverse cuisine and lively atmosphere of Dilli Vibes for your dining experience.
                 </p>
               </div>
             </div>

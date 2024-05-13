@@ -7,7 +7,6 @@ import useNestedDropdown from 'hooks/useNestedDropdown';
 import NextLink from 'components/reuseable/links/NextLink';
 import SocialLinks from 'components/reuseable/SocialLinks';
 
-
 // ===================================================================
 type NavbarProps = {
   info?: boolean;
@@ -25,8 +24,7 @@ type NavbarProps = {
 // ===================================================================
 
 const Navbar: FC<NavbarProps> = (props) => {
-  const { navClassName, fancy, navOtherClass, stickyBox, logoAlt } =
-    props;
+  const { navClassName, fancy, navOtherClass, stickyBox, logoAlt } = props;
 
   useNestedDropdown();
   const sticky = useSticky(350);
@@ -41,9 +39,15 @@ const Navbar: FC<NavbarProps> = (props) => {
   const headerContent = (
     <Fragment>
       <div className="navbar-brand w-100">
-        <NextLink href="/" 
-        // title={<img alt="logo" src={`/img/${logo}.png`} srcSet={`/img/${logo}@2x.png 2x`} />} />
-        title={<h3 className="text fs-30 m-0 p-0" style={{color: "#343f52"}}>Dilli Vibes</h3>} />
+        <NextLink
+          href="/"
+          // title={<img alt="logo" src={`/img/${logo}.png`} srcSet={`/img/${logo}@2x.png 2x`} />} />
+          title={
+            <h3 className="text fs-30 m-0 p-0" style={{ color: '#343f52' }}>
+              Dilli Vibes
+            </h3>
+          }
+        />
       </div>
 
       <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -55,31 +59,28 @@ const Navbar: FC<NavbarProps> = (props) => {
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link href={'#'} className="nav-link">
+              <Link href={'/dinnings'} className="nav-link">
                 Dinning
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={'#'} className="nav-link">
-              Birth Day
+              <Link href={'/birthday'} className="nav-link">
+                Birth Day
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link href={'#'} className="nav-link">
-                Gift Cards
-              </Link>
-            </li> */}
-            <li className="nav-item">
-              <Link href={'/contactus'} className="nav-link">
-              Contact US
-              </Link>
-            </li>
+            
             <li className="nav-item">
               <Link href={'/gallery'} className="nav-link">
-              Gallery
+                Gallery
               </Link>
             </li>
-           
+
+            <li className="nav-item">
+              <Link href={'/contactus'} className="nav-link">
+                Contact US
+              </Link>
+            </li>
+
             <li className="nav-item">
               <Link href={'/aboutus'} className="nav-link">
                 About Us
@@ -129,7 +130,6 @@ const Navbar: FC<NavbarProps> = (props) => {
           <div className="container flex-lg-row flex-nowrap align-items-center">{headerContent}</div>
         )}
       </nav>
-
     </Fragment>
   );
 };

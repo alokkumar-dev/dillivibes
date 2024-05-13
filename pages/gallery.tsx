@@ -23,7 +23,7 @@ const ProjectDetails: NextPage = () => {
       <PageProgress />
 
       {/* ========== header section ========== */}
-      <header className="wrapper bg-soft-primary">
+      <header className="wrapper bg-light">
         <Navbar
           language
           button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
@@ -31,7 +31,17 @@ const ProjectDetails: NextPage = () => {
       </header>
 
       <main className="content-wrapper">
-       
+      <section className="section-frame overflow-hidden">
+        <div className="wrapper bg-gray">
+          <div className="container py-13 py-md-17 text-center">
+            <div className="row">
+              <div className="col-lg-10 col-xxl-8 mx-auto">
+                <h1 className="display-1 mb-1">Explore Dilli Vibes Gallery.</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
         <section className="wrapper bg-light wrapper-border">
           <div className="container pb-14 pb-md-16">
             <div className="row">
