@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Team from 'icons/lineal/Team';
+// import Team from 'icons/lineal/Team';
 import Carousel from 'components/reuseable/Carousel';
 import { TeamCard1 } from 'components/reuseable/team-cards';
 // -------- data -------- //
@@ -18,7 +18,7 @@ const Team3: FC = () => {
       <div className="container py-14 py-md-16">
         <div className="row mb-3">
           <div className="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
-            <Team className="icon-svg-md mb-4" />
+            {/* <Team className="icon-svg-md mb-4" /> */}
             <h2 className="display-4 mb-3 px-lg-14">Save your time and money by choosing our professional team.</h2>
           </div>
         </div>

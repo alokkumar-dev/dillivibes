@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import { Fragment } from 'react';
 // -------- custom component -------- //
 import { Team3 } from 'components/blocks/team';
-import { About6 } from 'components/blocks/about';
+// import { About6 } from 'components/blocks/about';
 import { Facts5 } from 'components/blocks/facts';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
@@ -47,7 +47,7 @@ const About: NextPage = () => {
         <section className="wrapper bg-light angled upper-end lower-end">
           <div className="container py-14 py-md-16">
             {/* ========== about section ========== */}
-            <About6 />
+            {/* <About6 /> */}
 
             {/* ========== process section ========== */}
             <Process7 />

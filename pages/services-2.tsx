@@ -1,7 +1,6 @@
 import { NextPage } from 'next';
 import { Fragment } from 'react';
 // -------- custom component -------- //
-import { About5 } from 'components/blocks/about';
 import { Facts4 } from 'components/blocks/facts';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
@@ -64,9 +63,7 @@ const ServicesTwo: NextPage = () => {
         {/* ========== about section ========== */}
         <section className="wrapper bg-light">
           <div className="container py-14 py-md-16">
-            <div className="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-16 align-items-center">
-              <About5 />
-            </div>
+            
 
             <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div className="col-lg-7 order-lg-2">
