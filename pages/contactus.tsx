@@ -179,6 +179,7 @@ const Contactus: FC = () => {
                           <input
                             type="submit"
                             className="btn btn-primary rounded-pill btn-send"
+                            disabled={isLoading}
                             value={`${isLoading ? 'Loading...' : 'Send message'}`}
                           />
                         </div>

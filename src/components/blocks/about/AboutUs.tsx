@@ -24,16 +24,13 @@ const AboutUs: FC = () => {
             <div className="col-lg-6">
               <h2 className="display-5 mb-3">About Me</h2>
               <p className="lead fs-lg">
-                I'm Caitlyn Sandbox, a photographer specializing in food, drink and product photography.
+              Luxurious Comfort and Authentic Flavors at Dilli Vibes.
               </p>
               <p>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
-                dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
-                risus. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula.
+              Experience the vibrant heart of Delhi at Dilli Vibes, where culture meets comfort in the bustling capital of India. Nestled in the heart of the city, our hotel and restaurant offer a perfect blend of modern amenities and traditional hospitality, ensuring a memorable stay for every guest.
               </p>
               <p>
-                Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum
-                nulla sed consectetur. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur.
+              Dilli Vibes offers a unique blend of luxury and comfort, featuring elegant rooms and a vibrant restaurant. Experience authentic Delhi flavors in a cozy ambiance, perfect for a memorable stay and delightful dining.
               </p>
 
               {/* <NextLink title="Learn More" href="#" className="btn btn-primary rounded-pill mt-2" /> */}
