@@ -8,10 +8,9 @@ const Portfolio15: FC = () => {
       <div className="container mt-8">
         <div className="row">
           <div className="col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center">
-            <h2 className="display-2 mb-4">Creative. Smart. Awesome.</h2>
+            <h2 className="display-2 mb-4">Authentic Delhi Cuisine</h2>
             <p className="lead fs-lg mb-11">
-              Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus
-              eget urna.
+            Enjoy luxurious stays and authentic Delhi cuisine at Dilli Vibes, where comfort and flavor unite perfectly.
             </p>
           </div>
         </div>

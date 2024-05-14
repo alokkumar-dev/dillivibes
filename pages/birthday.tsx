@@ -38,7 +38,7 @@ const Projects: NextPage = () => {
         {/* ========== title section ========== */}
         <section className="section-frame overflow-hidden">
           <div className="wrapper bg-gray">
-            <div className="container py-13 py-md-17 text-center">
+            <div className="container py-8 py-md-10 text-center">
               <div className="row">
                 <div className="col-lg-10 col-xxl-8 mx-auto">
                   <h1 className="display-1 mb-1">Birthday celebrations in Dilli Vibes.</h1>
