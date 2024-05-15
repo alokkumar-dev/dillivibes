@@ -26,9 +26,7 @@ const Home: NextPage = () => {
       {/* ========== header ========== */}
 
       <header className="w-100">
-        <Navbar
-          navClassName="navbar navbar-expand-lg center-nav transparent navbar-light"
-        />
+        <Navbar navClassName="navbar navbar-expand-lg center-nav transparent navbar-light" />
       </header>
 
       {/* ========== main content ========== */}
@@ -38,9 +36,9 @@ const Home: NextPage = () => {
 
         {/* ========== about me section ========== */}
         <AboutUs />
-
-        <Portfolio15 />
-
+        <section className="wrapper overflow-hidden">
+          <Portfolio15 />
+        </section>
         {/* ========== banner section ========== */}
         <Banner2 />
 
