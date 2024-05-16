@@ -1,5 +1,5 @@
 const footerNav = [
-  { title: 'Dinning', url: '/dinning' },
+  { title: 'Dinning', url: '/dinnings' },
   { title: 'Gallery', url: '/gallery' },
   { title: 'Birth Day', url: '/birthday' },
   { title: 'About Us', url: '/aboutus' },

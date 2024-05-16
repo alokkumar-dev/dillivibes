@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 import type { NextPage } from 'next';
 import { Navbar } from 'components/blocks/navbar';
-import { Hero2 } from 'components/blocks/hero';
 
 const Blank: NextPage = () => {
     return (
