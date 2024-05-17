@@ -16,8 +16,7 @@
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar .navbar-collapse .nav-link {
-    padding-right: 0.6rem;
-    padding-left: 0.6rem;
+    padding: 0.7rem 0.6rem;
   }
 }
 @if $primary == $navy {

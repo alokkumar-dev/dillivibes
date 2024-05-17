@@ -238,6 +238,12 @@
   .caption-wrapper {
     display: none !important;
   }
+
+  .swiper-navigation {
+    .swiper-button {
+      display: none;
+    }
+  }
 }
 //----------------------------------------------------------//
 //	HERO

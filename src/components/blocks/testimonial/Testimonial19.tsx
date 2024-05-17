@@ -9,7 +9,7 @@ const Testimonial19: FC = () => {
     <section id="testimonials">
       <div
         className="wrapper image-wrapper bg-image bg-overlay"
-        style={{ backgroundImage: 'url(/img/photos/bg35.jpg)' }}
+        style={{ backgroundImage: 'url(/img/myimgs/t-bg1.jpeg)' }}
       >
         <div className="container pt-15 pb-13">
           <h2 className="display-5 mb-4 text-center text-white">Happy Customers</h2>

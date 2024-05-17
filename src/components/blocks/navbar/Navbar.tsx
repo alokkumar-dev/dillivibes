@@ -43,9 +43,9 @@ const Navbar: FC<NavbarProps> = (props) => {
           href="/"
           // title={<img alt="logo" src={`/img/${logo}.png`} srcSet={`/img/${logo}@2x.png 2x`} />} />
           title={
-            <h3 className="text fs-30 m-0 p-0" style={{ color: '#343f52' }}>
+            <h4 className="text fs-26 m-0 p-0" style={{ color: '#343f52' }}>
               Dilli Vibes
-            </h3>
+            </h4>
           }
         />
       </div>

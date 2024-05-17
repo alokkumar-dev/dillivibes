@@ -14,7 +14,7 @@ const AboutUs: FC = () => {
                 <Image
                   width={1000}
                   height={850}
-                  src="/img/photos/about30.jpeg"
+                  src="/img/myimgs/aboutus-img.jpeg"
                   alt=""
                   style={{ width: '100%', height: 'auto' }}
                 />
@@ -22,7 +22,7 @@ const AboutUs: FC = () => {
             </div>
 
             <div className="col-lg-6">
-              <h2 className="display-5 mb-3">About Me</h2>
+              <h2 className="display-5 mb-3">About Us</h2>
               <p className="lead fs-lg">
               Luxurious Comfort and Authentic Flavors at Dilli Vibes.
               </p>

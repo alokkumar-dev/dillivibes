@@ -2,16 +2,9 @@ import { FC } from 'react';
 import Carousel from 'components/reuseable/Carousel';
 // -------- data -------- //
 const images = [
-  // 'https://png.pngtree.com/png-clipart/20220502/original/pngtree-tourist-giving-rating-stars-to-hotel-banner-png-image_7643047.png',
-  // 'https://png.pngtree.com/png-clipart/20220502/original/pngtree-tourist-giving-rating-stars-to-hotel-banner-png-image_7643047.png',
-  // 'https://png.pngtree.com/png-clipart/20220502/original/pngtree-tourist-giving-rating-stars-to-hotel-banner-png-image_7643047.png',
-  // 'https://png.pngtree.com/png-clipart/20220502/original/pngtree-tourist-giving-rating-stars-to-hotel-banner-png-image_7643047.png',
-  // 'https://png.pngtree.com/png-clipart/20220502/original/pngtree-tourist-giving-rating-stars-to-hotel-banner-png-image_7643047.png'
-
-
-  'https://i.ibb.co/12rN5QR/New-Diet-Program-1.png',
-  'https://i.ibb.co/3hCrF0P/New-Diet-Program-6.png',
-  'https://i.ibb.co/nLY8qy3/New-Diet-Program-7.png'
+  "/img/hero-banner/hero-1.png",
+  "/img/hero-banner/hero-2.png",
+  "/img/hero-banner/hero-3.png"
  
 ];
 

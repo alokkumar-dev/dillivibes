@@ -111,8 +111,8 @@
           @include font-size(1.3rem);
         }
         .navbar-brand {
-          padding-top: 1.2rem;
-          padding-bottom: 1.2rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
         }
         &.fancy .navbar-collapse-wrapper {
           background: none !important;
@@ -259,9 +259,7 @@
           padding-top: 1.7rem;
           padding-bottom: 1.7rem;
         }
-        &.transparent:not(.fixed) {
-          padding-top: 0.3rem;
-        }
+        
         &.extended .navbar-collapse-wrapper,
         &.fancy .navbar-collapse-wrapper {
           box-shadow: $box-shadow-sm;
