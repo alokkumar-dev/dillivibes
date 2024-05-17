@@ -7,10 +7,10 @@ import useLightBox from 'hooks/useLightBox';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
-import FigureImage from 'components/reuseable/FigureImage';
+// import FigureImage from 'components/reuseable/FigureImage';
 import NextLink from 'components/reuseable/links/NextLink';
-import ProjectDetailsContent from 'components/common/ProjectDetailsContent';
-import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation';
+// import ProjectDetailsContent from 'components/common/ProjectDetailsContent';
+// import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation';
 // -------- data -------- //
 const images = ['/img/photos/pp2.jpg', '/img/photos/pp3.jpg', '/img/photos/pp4.jpg', '/img/photos/pp5.jpg', '/img/photos/pp2.jpg', '/img/photos/pp3.jpg',];
 
