@@ -9,7 +9,6 @@ import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink';
 // -------- custom hook -------- //
 import useIsotope from 'hooks/useIsotope';
-// -------- data -------- //
 const projectList = [
   {
     id: 1,

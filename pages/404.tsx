@@ -9,7 +9,6 @@ import NextLink from 'components/reuseable/links/NextLink';
 const NotFound: NextPage = () => {
   return (
     <Fragment>
-      {/* ========== header section ========== */}
       <header className="wrapper bg-light">
         <Navbar
           language

@@ -4,7 +4,6 @@ import type { AppProps } from 'next/app';
 import { Fragment, useEffect, useState } from 'react';
 import ThemeProvider from 'theme/ThemeProvider';
 
-// animate css
 import 'animate.css';
 // import swiper css
 import 'swiper/css';
@@ -51,7 +50,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <ThemeProvider>
-        {/* <div className="page-loader" /> */}
         {loading ? <div className="page-loader" /> : <Component {...pageProps} />}
       </ThemeProvider>
     </Fragment>
