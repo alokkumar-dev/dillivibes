@@ -19,7 +19,7 @@ const Contactus: FC = () => {
   } = useForm();
 
   const onSubmit = (data: any) => {
-    if (data?.name != '' && data?.email != '' && data?.message != '' && data?.phoneno != '') {
+    if (data?.name != '' && data?.email != '' && data?.message != '' && data?.phoneno != '' && data?.type != '') {
       setIsLoading(true);
       const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
       const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
@@ -30,6 +30,7 @@ const Contactus: FC = () => {
         from_name: data?.name,
         from_email: data?.email,
         from_phoneno: data?.phoneno,
+        from_type: data?.type,
         to_name: 'Dilli Vibes Team',
         message: data?.message
       };
@@ -136,28 +137,33 @@ const Contactus: FC = () => {
                               type="phoneno"
                               id="form_phoneno"
                               {...register('phoneno', { required: true })}
-                              placeholder="Contact No"
+                              placeholder="Contact No."
                               className="form-control bg-white-700 border-0"
                             />
-                            {errors.phoneno && <p>Phone No is required.</p>}
+                            {errors.phoneno && <p>Phone No. is required.</p>}
                             <label htmlFor="Contact_No">Contact No *</label>
                             <div className="valid-feedback">Looks good!</div>
                             <div className="invalid-feedback">Please provide a valid email address.</div>
                           </div>
                         </div>
-                        {/* <div className="col-md-6">
+                        <div className="col-md-6">
                           <div className="form-select-wrapper mb-4">
-                            <select className="form-select" id="form_type" required {...register('type', { required: true })}>
-                          
+                            <select
+                              className="form-select"
+                              id="form_type"
+                              required
+                              {...register('type', { required: true })}
+                            >
+                              <option value="">Select</option>
                               <option value="Hotels">Hotels</option>
                               <option value="Rooms">Rooms</option>
                               <option value="Both">Both</option>
                             </select>
-                            {errors.type && <p>Phone No is required.</p>}
+                            {errors.type && <p>Select is required.</p>}
                             <div className="valid-feedback"> Looks good! </div>
                             <div className="invalid-feedback"> Please select a department. </div>
                           </div>
-                        </div> */}
+                        </div>
 
                         <div className="col-12">
                           <div className="form-floating mb-4">
