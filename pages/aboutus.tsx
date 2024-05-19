@@ -44,11 +44,11 @@ const AboutUs: FC = () => {
                   capital of India. Nestled in the heart of the city, our hotel and restaurant offer a perfect blend of
                   modern amenities and traditional hospitality, ensuring a memorable stay for every guest.
                 </p>
-                <p>
+                {/* <p>
                   Dilli Vibes offers a unique blend of luxury and comfort, featuring elegant rooms and a vibrant
                   restaurant. Experience authentic Delhi flavors in a cozy ambiance, perfect for a memorable stay and
                   delightful dining.
-                </p>
+                </p> */}
 
                 {/* <NextLink title="Learn More" href="#" className="btn btn-primary rounded-pill mt-2" /> */}
                 <SocialLinks className="nav social " />

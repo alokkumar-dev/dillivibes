@@ -6,6 +6,7 @@ import useNestedDropdown from 'hooks/useNestedDropdown';
 // -------- custom component -------- //
 import NextLink from 'components/reuseable/links/NextLink';
 import SocialLinks from 'components/reuseable/SocialLinks';
+import { useRouter } from 'next/router';
 
 // ===================================================================
 type NavbarProps = {
@@ -25,6 +26,7 @@ type NavbarProps = {
 
 const Navbar: FC<NavbarProps> = (props) => {
   const { navClassName, fancy, navOtherClass, stickyBox, logoAlt } = props;
+  const { asPath } = useRouter();
 
   useNestedDropdown();
   const sticky = useSticky(350);
@@ -59,30 +61,30 @@ const Navbar: FC<NavbarProps> = (props) => {
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link href={'/dinnings'} className="nav-link">
+              <Link href={'/dinnings'} className={`nav-link ${asPath == '/dinnings' ? 'active' : ''}`}>
                 Dinning
               </Link>
             </li>
             <li className="nav-item">
-              <Link href={'/birthday'} className="nav-link">
+              <Link href={'/birthday'} className={`nav-link ${asPath == '/birthday' ? 'active' : ''}`}>
                 Birth Day
               </Link>
             </li>
-            
+
             <li className="nav-item">
-              <Link href={'/gallery'} className="nav-link">
+              <Link href={'/gallery'} className={`nav-link ${asPath == '/gallery' ? 'active' : ''}`}>
                 Gallery
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link href={'/contactus'} className="nav-link">
+              <Link href={'/contactus'} className={`nav-link ${asPath == '/contactus' ? 'active' : ''}`}>
                 Contact US
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link href={'/aboutus'} className="nav-link">
+              <Link href={'/aboutus'} className={`nav-link ${asPath == '/aboutus' ? 'active' : ''}`}>
                 About Us
               </Link>
             </li>
@@ -91,11 +93,17 @@ const Navbar: FC<NavbarProps> = (props) => {
           {/* ============= show contact info in the small device sidebar ============= */}
           <div className="offcanvas-footer d-lg-none">
             <div>
-              <NextLink title="info@email.com" className="link-inverse" href="mailto:first.last@email.com" />
+              <NextLink title="dillivibes23@gmail.com" className="link-inverse" href="mailto:dillivibes23@gmail.com" />
               <br />
-              <NextLink href="tel:1234567890" title="1234567890" />
+              <NextLink href="tel:7055101235" title="+917055101235" />
+              <br />
+              <NextLink href="tel:7817851235" title="+917817851235" />
               <br />
               <SocialLinks />
+              <p className="mb-4">
+                © {new Date().getFullYear()} Dilli Vibes <br className="d-none d-lg-block" />
+                All rights reserved.
+              </p>
             </div>
           </div>
         </div>
