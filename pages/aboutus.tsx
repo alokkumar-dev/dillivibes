@@ -5,12 +5,13 @@ import PageProgress from 'components/common/PageProgress';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import SocialLinks from 'components/reuseable/SocialLinks';
+import WhatsAppButton from 'components/common/WhatsAppButton';
 
 const AboutUs: FC = () => {
   return (
     <Fragment>
       <PageProgress />
-
+      <WhatsAppButton />
       {/* ========== header section ========== */}
       {/* bg-soft-primary */}
       <header className="wrapper bg-light">
@@ -35,7 +36,7 @@ const AboutUs: FC = () => {
         <div className="wrapper bg-gray">
           <div className="container py-14 py-md-16">
             <div className="row gx-md-8 gx-xl-12 gy-6 align-items-center">
-              <div className="col-lg-6 order-lg-2">
+              <div className="col-lg-6">
                 <h2 className="display-5 mb-3">About Us</h2>
                 <p className="lead fs-lg">Luxurious Comfort and Authentic Flavors at Dilli Vibes.</p>
                 <p>
@@ -52,7 +53,7 @@ const AboutUs: FC = () => {
                 {/* <NextLink title="Learn More" href="#" className="btn btn-primary rounded-pill mt-2" /> */}
                 <SocialLinks className="nav social " />
               </div>
-              <div className="col-md-8 col-lg-6 mx-auto">
+              <div className="col-md-8 col-lg-6 mx-auto order-lg-2">
                 <div className="img-mask mask-2">
                   <Image
                     width={1000}

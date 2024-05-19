@@ -9,6 +9,7 @@ import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink';
 // -------- custom hook -------- //
 import useIsotope from 'hooks/useIsotope';
+import WhatsAppButton from 'components/common/WhatsAppButton';
 const projectList = [
   {
     id: 1,
@@ -17,7 +18,7 @@ const projectList = [
     type: 'product',
     category: 'COSMETIC',
     title: 'Cras Fermentum Sem',
-    image: { width: 1300, height: 1262, url: '/img/photos/cs16.jpg' }
+    image: { width: 1300, height: 1262, url: '/img/dinings/d1.jpg' }
   },
   {
     id: 2,
@@ -26,7 +27,7 @@ const projectList = [
     type: 'workshop',
     category: 'COFFEE',
     title: 'Mollis Ipsum Mattis',
-    image: { width: 1300, height: 1435, url: '/img/photos/cs17.jpg' }
+    image: { width: 1300, height: 1435, url: '/img/dinings/d2.jpg' }
   },
   {
     id: 3,
@@ -35,7 +36,7 @@ const projectList = [
     type: 'still-life',
     category: 'STILL LIFE',
     title: 'Ipsum Ultricies Cursus',
-    image: { width: 1200, height: 923, url: '/img/photos/cs18.jpg' }
+    image: { width: 1200, height: 923, url: '/img/dinings/d3.jpg' }
   },
   {
     id: 4,
@@ -44,7 +45,7 @@ const projectList = [
     type: 'product',
     category: 'PRODUCT',
     title: 'Sollicitudin Ornare Porta',
-    image: { width: 1200, height: 919, url: '/img/photos/cs19.jpg' }
+    image: { width: 1200, height: 919, url: '/img/dinings/d4.jpg' }
   },
 
   {
@@ -54,7 +55,7 @@ const projectList = [
     type: 'workshop',
     category: 'WORKSHOP',
     title: 'Ipsum Mollis Vulputate',
-    image: { width: 1200, height: 960, url: '/img/photos/cs21.jpg' }
+    image: { width: 1200, height: 960, url: '/img/dinings/d5.jpg' }
   },
   {
     id: 5,
@@ -63,7 +64,7 @@ const projectList = [
     type: 'product',
     category: 'PRODUCT',
     title: 'Inceptos Euismod Egestas',
-    image: { width: 1300, height: 1365, url: '/img/photos/cs20.jpg' }
+    image: { width: 1300, height: 1365, url: '/img/dinings/d6.jpg' }
   },
   {
     id: 8,
@@ -72,7 +73,7 @@ const projectList = [
     type: 'concept',
     category: 'CONCEPT',
     title: 'Porta Ornare Cras',
-    image: { width: 1200, height: 1200, url: '/img/photos/cs22.jpg' }
+    image: { width: 1200, height: 1200, url: '/img/dinings/d7.jpg' }
   },
   {
     id: 10,
@@ -81,17 +82,17 @@ const projectList = [
     type: 'product',
     category: 'PRODUCT',
     title: 'Magna Tristique Inceptos',
-    image: { width: 1200, height: 830, url: '/img/photos/cs24.jpg' }
+    image: { width: 1200, height: 830, url: '/img/dinings/d8.jpg' }
   },
-  {
-    id: 7,
-    link: '#',
-    color: 'aqua',
-    type: 'concept',
-    category: 'CONCEPT',
-    title: 'Vulputate Sollicitudin',
-    image: { width: 1200, height: 1294, url: '/img/photos/cs23.jpg' }
-  }
+  // {
+  //   id: 7,
+  //   link: '#',
+  //   color: 'aqua',
+  //   type: 'concept',
+  //   category: 'CONCEPT',
+  //   title: 'Vulputate Sollicitudin',
+  //   image: { width: 1200, height: 1294, url: '/img/dinings/d1.jpg' }
+  // }
 ];
 
 const filterItems = [
@@ -108,7 +109,7 @@ const ProjectsFour: NextPage = () => {
   return (
     <Fragment>
       <PageProgress />
-
+      <WhatsAppButton />
       {/* ========== header section ========== */}
       <header className="wrapper bg-light">
         <Navbar
@@ -170,12 +171,12 @@ const ProjectsFour: NextPage = () => {
                       </a>
                     </Link>
 
-                    <div className="project-details d-flex justify-content-center flex-column">
+                    {/* <div className="project-details d-flex justify-content-center flex-column">
                       <div className="post-header">
                         <div className={`post-category text-line mb-3 text-${color}`}>{category}</div>
                         <h2 className="post-title h3">{title}</h2>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 ))}
               </div>

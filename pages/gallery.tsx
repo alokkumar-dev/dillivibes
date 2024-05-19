@@ -7,12 +7,21 @@ import useLightBox from 'hooks/useLightBox';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
-// import FigureImage from 'components/reuseable/FigureImage';
 import NextLink from 'components/reuseable/links/NextLink';
-// import ProjectDetailsContent from 'components/common/ProjectDetailsContent';
-// import ProjectDetailsNavigation from 'components/common/ProjectDetailsNavigation';
+import WhatsAppButton from 'components/common/WhatsAppButton';
 // -------- data -------- //
-const images = ['/img/photos/pp2.jpg', '/img/photos/pp3.jpg', '/img/photos/pp4.jpg', '/img/photos/pp5.jpg', '/img/photos/pp2.jpg', '/img/photos/pp3.jpg',];
+const images = [
+  '/img/gallery/g1.jpg',
+  '/img/gallery/g2.jpg',
+  '/img/gallery/g3.jpg',
+  '/img/gallery/g4.jpg',
+  '/img/gallery/g5.jpg',
+  '/img/gallery/g6.jpg',
+  '/img/gallery/g7.jpg',
+  '/img/gallery/g8.jpg',
+  '/img/gallery/g9.jpg',
+  '/img/gallery/g10.jpg',
+];
 
 const ProjectDetails: NextPage = () => {
   // used for image lightbox
@@ -21,7 +30,7 @@ const ProjectDetails: NextPage = () => {
   return (
     <Fragment>
       <PageProgress />
-
+      <WhatsAppButton />
       {/* ========== header section ========== */}
       <header className="wrapper bg-light">
         <Navbar
@@ -31,17 +40,17 @@ const ProjectDetails: NextPage = () => {
       </header>
 
       <main className="content-wrapper">
-      <section className="section-frame overflow-hidden">
-        <div className="wrapper bg-gray">
-          <div className="container py-8 py-md-10 text-center">
-            <div className="row">
-              <div className="col-lg-10 col-xxl-8 mx-auto">
-                <h1 className="display-1 mb-1">Explore Dilli Vibes Gallery.</h1>
+        <section className="section-frame overflow-hidden">
+          <div className="wrapper bg-gray">
+            <div className="container py-8 py-md-10 text-center">
+              <div className="row">
+                <div className="col-lg-10 col-xxl-8 mx-auto">
+                  <h1 className="display-1 mb-1">Explore Dilli Vibes Gallery.</h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
         <section className="wrapper bg-light wrapper-border">
           <div className="container pb-14 pb-md-16">
             <div className="row">

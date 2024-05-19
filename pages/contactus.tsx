@@ -7,6 +7,7 @@ import { Navbar } from 'components/blocks/navbar';
 import NextLink from 'components/reuseable/links/NextLink';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import WhatsAppButton from 'components/common/WhatsAppButton';
 
 const Contactus: FC = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -52,7 +53,7 @@ const Contactus: FC = () => {
   return (
     <Fragment>
       <PageProgress />
-
+      <WhatsAppButton />
       {/* ========== header section ========== */}
       <header className="wrapper bg-light">
         <Navbar

@@ -12,6 +12,7 @@ import useLightBox from 'hooks/useLightBox';
 import useTooltip from 'hooks/useTooltip';
 // -------- data -------- //
 import { projectList1 } from 'data/project';
+import WhatsAppButton from 'components/common/WhatsAppButton';
 
 const Projects: NextPage = () => {
   // used for masonry layout
@@ -24,7 +25,7 @@ const Projects: NextPage = () => {
   return (
     <Fragment>
       <PageProgress />
-
+      <WhatsAppButton />
       {/* ========== header section ========== */}
       <header className="wrapper bg-light">
         <Navbar
