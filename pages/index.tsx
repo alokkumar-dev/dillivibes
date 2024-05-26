@@ -27,16 +27,16 @@ const Home: NextPage = () => {
         <title>Dilli Vibes - Best Hotel and Restaurant</title>
         <meta
           name="description"
-          content="Experience the best of Delhi at Dilli Vibes, a premier hotel and restaurant offering luxurious stays and exquisite dining. Book your stay now!"
+          content="Experience the best of Highway Food at Dilli Vibes, a premier hotel and restaurant offering luxurious stays and exquisite dining. Book your stay now!"
         />
         <meta
-          name="keywords"
+          name="Dilli Vibes Hotel & Restaurant "
           content="Dilli Vibes, dilli vibes hotel, dilli vibes hotel restaurant, dillivibes hotel, hotel in Atrasi Uttar Pradesh, hotel in Atrasi, hotel in uttar pradesh, restaurant in Atrasi, best hotel in Atrasi, luxurious hotel Atrasi,  luxurious hotel Atrasi  Uttar Pradesh"
         />
-        <meta property="og:title" content="Dilli Vibes - Best Hotel and Restaurant in Atrasi" />
+        <meta property="og:title" content="Dilli Vibes - Best Hotel and Restaurant in Atrashi Amroha " />
         <meta
           property="og:description"
-          content="Experience the best of Atrasi at Dilli Vibes, a premier hotel and restaurant offering luxurious stays and exquisite dining. Book your stay now!"
+          content="Experience the best of Highway Food at Dilli Vibes, a premier hotel and restaurant offering luxurious stays and exquisite dining. Book your stay now!"
         />
         <meta property="og:image" content="/img/hero-banner/hero-1.png" />
         <meta property="og:url" content="https://www.dillivibes.com" />
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
                 addressCountry: 'IN'
               },
               image: 'https://www.dillivibes.com/img/hero-banner/hero-1.png',
-              telephone: ["+91-7055101235", "+91-7817851235"],
+              telephone: ['+91-7055101235', '+91-7817851235'],
               amenityFeature: [
                 {
                   '@type': 'Best Vehicle Parking',
@@ -84,10 +84,7 @@ const Home: NextPage = () => {
                   value: true
                 }
               ],
-              sameAs: [
-                'https://www.instagram.com/dillivibes1',
-                'https://www.youtube.com/@dillivibes1'
-              ]
+              sameAs: ['https://www.instagram.com/dillivibes1', 'https://www.youtube.com/@dillivibes1']
             })
           }}
         />
