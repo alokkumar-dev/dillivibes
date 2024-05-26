@@ -1,22 +1,31 @@
 import { FC, Fragment, useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, FieldError } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+interface FormData {
+  name: string;
+  email: string;
+  phoneno: string;
+  type: string;
+  message: string;
+}
+
 const Contactus: FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
     reset
-  } = useForm();
+  } = useForm<FormData>();
 
-  const onSubmit = (data: any) => {
-    if (data?.name != '' && data?.email != '' && data?.message != '' && data?.phoneno != '' && data?.type != '') {
+  const onSubmit = (data: FormData) => {
+    if (data.name && data.email && data.message && data.phoneno && data.type) {
       setIsLoading(true);
       const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
       const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
@@ -24,12 +33,12 @@ const Contactus: FC = () => {
 
       // Create a new object that contains dynamic template params
       const templateParams = {
-        from_name: data?.name,
-        from_email: data?.email,
-        from_phoneno: data?.phoneno,
-        from_type: data?.type,
+        from_name: data.name,
+        from_email: data.email,
+        from_phoneno: data.phoneno,
+        from_type: data.type,
         to_name: 'Dilli Vibes Team',
-        message: data?.message
+        message: data.message
       };
 
       // Send the email using EmailJS
@@ -37,13 +46,14 @@ const Contactus: FC = () => {
         .send(serviceId as string, templateId as string, templateParams, publicKey as string)
         .then((response) => {
           console.log('Email sent successfully!', response);
-          // alert('Email sent successfully!');
           setIsLoading(false);
           toast.success('Form submitted successfully.');
           reset();
         })
         .catch((error) => {
           console.error('Error sending email:', error);
+          setIsLoading(false);
+          toast.error('Failed to send the form. Please try again.');
         });
     }
   };
@@ -94,10 +104,17 @@ const Contactus: FC = () => {
                               type="text"
                               id="form_name"
                               placeholder="Name"
-                              {...register('name', { required: true })}
+                              {...register('name', {
+                                required: 'Name is required.',
+                                pattern: {
+                                  value: /^[A-Za-z\s]+$/,
+                                  message: 'Name can only contain letters and spaces.'
+                                }
+                              })}
                               className="form-control bg-white-700 border-0"
+                              onBlur={(e) => setValue('name', e.target.value.trim())}
                             />
-                            {errors.name && <p>Name is required.</p>}
+                            {errors.name && <h6 style={{ color: '#E21F25' }}>{(errors.name as FieldError).message}</h6>}
                             <label htmlFor="form_name">Name *</label>
                             <div className="valid-feedback">Looks good!</div>
                             <div className="invalid-feedback">Please enter your name.</div>
@@ -110,48 +127,69 @@ const Contactus: FC = () => {
                               required
                               type="email"
                               id="form_email"
-                              {...register('email', { required: true })}
+                              {...register('email', {
+                                required: 'Email is required.',
+                                pattern: {
+                                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                  message: 'Invalid email address.'
+                                }
+                              })}
                               placeholder="alok@example.com"
                               className="form-control bg-white-700 border-0"
+                              onBlur={(e) => setValue('email', e.target.value.trim())}
                             />
-                            {errors.email && <p>Email is required.</p>}
+                            {errors.email && (
+                              <h6 style={{ color: '#E21F25' }}>{(errors.email as FieldError).message}</h6>
+                            )}
                             <label htmlFor="form_email">Email *</label>
                             <div className="valid-feedback">Looks good!</div>
                             <div className="invalid-feedback">Please provide a valid email address.</div>
                           </div>
                         </div>
+
                         <div className="col-md-6">
                           <div className="form-floating mb-4">
                             <input
                               required
-                              type="phoneno"
+                              type="text"
                               id="form_phoneno"
-                              {...register('phoneno', { required: true })}
+                              {...register('phoneno', {
+                                required: 'Phone number is required.',
+                                pattern: {
+                                  value: /^[0-9]+$/,
+                                  message: 'Phone number can only contain digits.'
+                                }
+                              })}
                               placeholder="Contact No."
                               className="form-control bg-white-700 border-0"
+                              onBlur={(e) => setValue('phoneno', e.target.value.trim())}
                             />
-                            {errors.phoneno && <p>Phone No. is required.</p>}
+                            {errors.phoneno && (
+                              <h6 style={{ color: '#E21F25' }}>{(errors.phoneno as FieldError).message}</h6>
+                            )}
                             <label htmlFor="Contact_No">Contact No *</label>
                             <div className="valid-feedback">Looks good!</div>
-                            <div className="invalid-feedback">Please provide a valid email address.</div>
+                            <div className="invalid-feedback">Please provide a valid phone number.</div>
                           </div>
                         </div>
+
                         <div className="col-md-6">
                           <div className="form-select-wrapper mb-4">
                             <select
                               className="form-select"
                               id="form_type"
                               required
-                              {...register('type', { required: true })}
+                              {...register('type', { required: 'Selection is required.' })}
+                              onBlur={(e) => setValue('type', e.target.value.trim())}
                             >
                               <option value="">Select</option>
                               <option value="Hotels">Hotels</option>
                               <option value="Rooms">Rooms</option>
                               <option value="Both">Both</option>
                             </select>
-                            {errors.type && <p>Select is required.</p>}
-                            <div className="valid-feedback"> Looks good! </div>
-                            <div className="invalid-feedback"> Please select a department. </div>
+                            {errors.type && <h6 style={{ color: '#E21F25' }}>{(errors.type as FieldError).message}</h6>}
+                            <div className="valid-feedback">Looks good!</div>
+                            <div className="invalid-feedback">Please select a department.</div>
                           </div>
                         </div>
 
@@ -163,12 +201,15 @@ const Contactus: FC = () => {
                               placeholder="Your message"
                               className="form-control bg-white-700 border-0"
                               style={{ height: 150 }}
-                              {...register('message', { required: true })}
+                              {...register('message', { required: 'Message is required.' })}
+                              onBlur={(e) => setValue('message', e.target.value.trim())}
                             />
-                            {errors.message && <p>Message is required.</p>}
+                            {errors.message && (
+                              <h6 style={{ color: '#E21F25' }}>{(errors.message as FieldError).message}</h6>
+                            )}
                             <label htmlFor="form_message">Message *</label>
                             <div className="valid-feedback">Looks good!</div>
-                            <div className="invalid-feedback">Please enter your messsage.</div>
+                            <div className="invalid-feedback">Please enter your message.</div>
                           </div>
                         </div>
 
