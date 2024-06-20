@@ -15,7 +15,6 @@ import { Portfolio15, Portfolio5 } from 'components/blocks/portfolio';
 import { Testimonial19 } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
 import WhatsAppButton from 'components/common/WhatsAppButton';
-// import WhatsAppButton from 'components/common/WhatsAppButton';
 
 const Home: NextPage = () => {
   // lighbox hook called
