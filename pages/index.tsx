@@ -29,10 +29,10 @@ const Home: NextPage = () => {
           content="Experience the best of Highway Food at Dilli Vibes, a premier hotel and restaurant offering luxurious stays and exquisite dining. Book your stay now!"
         />
         <meta
-          name="Dilli Vibes Hotel & Restaurant "
-          content="Dilli Vibes, dilli vibes hotel, dilli vibes hotel restaurant, dillivibes hotel, hotel in Atrasi Uttar Pradesh, hotel in Atrasi, hotel in uttar pradesh, restaurant in Atrasi, best hotel in Atrasi, luxurious hotel Atrasi,  luxurious hotel Atrasi  Uttar Pradesh"
+          name="Dilli Vibes Hotel & Restaurant"
+          content="Dilli Vibes, dilli vibes hotel, dvr, DVR, dilli vibes hotel restaurant, dillivibes hotel, hotel in Atrasi Uttar Pradesh, hotel in Atrasi, hotel in uttar pradesh, restaurant in Atrasi, best hotel in Atrasi, luxurious hotel Atrasi,  luxurious hotel Atrasi  Uttar Pradesh"
         />
-        <meta property="og:title" content="Dilli Vibes - Best Hotel and Restaurant in Atrashi Amroha " />
+        <meta property="og:Dilli Vibes Hotel & Restaurant" content="Dilli Vibes - Best Hotel and Restaurant in Atrashi Amroha " />
         <meta
           property="og:description"
           content="Experience the best of Highway Food at Dilli Vibes, a premier hotel and restaurant offering luxurious stays and exquisite dining. Book your stay now!"

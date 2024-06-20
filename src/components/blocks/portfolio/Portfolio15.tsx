@@ -10,7 +10,8 @@ const Portfolio15: FC = () => {
           <div className="col-md-11 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center">
             <h2 className="display-2 mb-4">Authentic Delhi Cuisine</h2>
             <p className="lead fs-lg mb-11">
-            Enjoy luxurious stays and authentic Delhi cuisine at Dilli Vibes, where comfort and flavor unite perfectly.
+              Enjoy luxurious stays and authentic Delhi cuisine at Dilli Vibes, where comfort and flavor unite
+              perfectly.
             </p>
           </div>
         </div>
@@ -29,9 +30,9 @@ const Portfolio15: FC = () => {
           wrapperClass="swiper-wrapper ticker"
           className="overflow-visible pe-none"
         >
-          {[1, 6, 7, 6, 1, 6].map((num) => (
+          {[1, 2, 3, 4, 5, 6, 7].map((num) => (
             <figure className="rounded-xl shadow-xl" key={num}>
-              <img src={`/img/photos/pf${num}.jpg`} srcSet={`/img/photos/pf${num}.jpg`} alt="" />
+              <img src={`/img/slide_portfolio/p${num}.jpeg`} srcSet={`/img/slide_portfolio/p${num}.jpeg 2x`} alt="" />
             </figure>
           ))}
         </Carousel>
@@ -51,9 +52,9 @@ const Portfolio15: FC = () => {
           className="overflow-visible pe-none"
           dir="rtl"
         >
-          {[6, 1, 6, 7, 6, 1].map((num) => (
+          {[7, 6, 5, 4, 3, 2, 1].map((num) => (
             <figure className="rounded-xl shadow-xl" key={num}>
-              <img src={`/img/photos/pf${num}.jpg`} srcSet={`/img/photos/pf${num}.jpg 2x`} alt="" />
+              <img src={`/img/slide_portfolio/p${num}.jpeg`} srcSet={`/img/slide_portfolio/p${num}.jpeg 2x`} alt="" />
             </figure>
           ))}
         </Carousel>
