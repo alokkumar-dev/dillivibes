@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 // -------- custom hooks -------- //
 import useLightBox from 'hooks/useLightBox';
 // -------- custom component -------- //
-import { Hero24 } from 'components/blocks/hero';
+import { Hero20, Hero24 } from 'components/blocks/hero';
 import { AboutUs } from 'components/blocks/about';
 import { Navbar } from 'components/blocks/navbar';
 import { Banner2 } from 'components/blocks/banner';
@@ -100,7 +100,8 @@ const Home: NextPage = () => {
       {/* ========== main content ========== */}
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
-        <Hero24 />
+        {/* <Hero24 /> */}
+        <Hero20 />
 
         {/* ========== about me section ========== */}
         <AboutUs />
