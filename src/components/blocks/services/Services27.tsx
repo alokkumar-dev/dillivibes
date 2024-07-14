@@ -11,19 +11,19 @@ const Services27: FC = () => {
             <div className="col-lg-6">
               <div className="row g-6 text-center">
                 <div className="col-md-6">
-                  <Card title="Products" image="/img/photos/fs4.jpg" className="mb-6" />
-                  <Card title="Recipes" image="/img/photos/fs6.jpg" />
+                  <Card title="Dinings" image="/img/our-services/dining.jpg" className="mb-6" />
+                  <Card title="Recipes" image="/img/our-services/recipe.jpg" />
                 </div>
 
                 <div className="col-md-6">
-                  <Card title="Restaurants" image="/img/photos/fs5.jpg" className="mt-md-6 mb-6" />
-                  <Card title="Still Life" image="/img/photos/fs7.jpg" />
+                  <Card title="Restaurants" image="/img/our-services/restaurant.jpg" className="mt-md-6 mb-6" />
+                  <Card title="Hotel" image="/img/our-services/hotel.jpg" />
                 </div>
               </div>
             </div>
 
             <div className="col-lg-5 offset-lg-1">
-              <h2 className="display-5 mb-3">My Services</h2>
+              <h2 className="display-5 mb-3">Our Services</h2>
               <p className="lead fs-lg">
               Delicious cuisine served with care, ensuring a memorable dining experience for our guests.
               </p>
@@ -53,9 +53,9 @@ const Card: FC<CardProps> = ({ image, title, className = '' }) => (
         {/* </a> */}
       </div>
 
-      <figcaption>
+      {/* <figcaption>
         <h5 className="from-top mb-0">View Gallery</h5>
-      </figcaption>
+      </figcaption> */}
     </figure>
 
     <div className="card-body p-4">

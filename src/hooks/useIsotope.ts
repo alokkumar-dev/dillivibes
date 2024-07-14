@@ -28,7 +28,7 @@ const useIsotope = () => {
     })();
 
     return () => isotope.current?.destroy();
-  }, []);
+  }, [filterKey]);  // this dependency added for default layout design.
 
   useEffect(() => {
     const filtered = filterKey === '*' ? { filter: '*' } : { filter: filterKey };
