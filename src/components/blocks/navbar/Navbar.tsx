@@ -62,7 +62,7 @@ const Navbar: FC<NavbarProps> = (props) => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link href={'/dinnings'} className={`nav-link ${asPath == '/dinnings' ? 'active' : ''}`}>
-                Dinning
+                Dinings
               </Link>
             </li>
             <li className="nav-item">
