@@ -18,9 +18,7 @@ const images = [
   '/img/gallery/g5.jpg',
   '/img/gallery/g6.jpg',
   '/img/gallery/g7.jpg',
-  '/img/gallery/g8.jpg',
-  '/img/gallery/g9.jpg',
-  '/img/gallery/g10.jpg',
+  '/img/gallery/g8.jpg'
 ];
 
 const ProjectDetails: NextPage = () => {
