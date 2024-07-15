@@ -283,10 +283,13 @@ const Contactus: FC = () => {
                         </div>
                         <div>
                           <h5 className="mb-1">Phone</h5>
-
                           <NextLink title="7055101235" href="tel:7055101235" />
-                          <br />
+                          {/* <br /> */} &nbsp;
                           <NextLink title="7817851235" href="tel:7817851235" />
+                          <br />
+                          <NextLink title="5922246555" href="tel:5922246555" />
+                          {/* <br /> */} &nbsp;
+                          <NextLink title="9411835668" href="tel:9411835668" />
                         </div>
                       </div>
 

@@ -42,9 +42,13 @@ const Footer8: FC = () => {
               <address className="pe-xl-15 pe-xxl-17">NH-9, Road, Delhi, Atrasi, Uttar Pradesh-244221, India</address>
               <NextLink title="dillivibes23@gmail.com" href="mailto:dillivibes23@gmail.com" />
               <br />
-              <NextLink title="+917055101235" href="tel:7055101235" />
+              <NextLink title="7055101235" href="tel:7055101235" />
+              {/* <br /> */} &nbsp;
+              <NextLink title="7817851235" href="tel:7817851235" />
               <br />
-              <NextLink title="+917817851235" href="tel:7817851235" />
+              <NextLink title="5922246555" href="tel:5922246555" />
+              {/* <br /> */} &nbsp;
+              <NextLink title="9411835668" href="tel:9411835668" />
             </div>
           </div>
 

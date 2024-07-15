@@ -96,8 +96,12 @@ const Navbar: FC<NavbarProps> = (props) => {
               <NextLink title="dillivibes23@gmail.com" className="link-inverse" href="mailto:dillivibes23@gmail.com" />
               <br />
               <NextLink href="tel:7055101235" title="+917055101235" />
-              <br />
+              {/* <br /> */}
               <NextLink href="tel:7817851235" title="+917817851235" />
+              <br />
+              <NextLink title="5922246555" href="tel:5922246555" />
+              {/* <br /> */}
+              <NextLink title="9411835668" href="tel:9411835668" />
               <br />
               <SocialLinks />
               <p className="mb-4">
