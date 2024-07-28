@@ -1,4 +1,3 @@
-// used in the testimonial-19 block
 export const testimonialList7 = [
   {
     id: 1,
