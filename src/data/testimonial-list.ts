@@ -168,30 +168,24 @@ export const testimonialList7 = [
     id: 1,
     name: 'Coriss Ambady',
     designation: 'Financial Analyst',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.`
+    review: `Wonderful stay! Clean rooms, friendly staff, and great location. Exceeded our expectations. Highly recommend for a comfortable!.`
   },
   {
     id: 2,
     name: 'Cory Zamora',
     designation: 'Marketing Specialist',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.`
+    review: `Amazing food and fantastic service! The ambiance was cozy, and every dish was delicious  and good services as well. A must-visit for food lovers!.`
   },
   {
     id: 3,
     name: 'Nikolas Brooten',
     designation: 'Sales Specialist',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.`
+    review: `Perfect getaway! Comfortable rooms, excellent service, and stunning views. The staff made us feel truly welcome. Will definitely return!`
   },
   {
     id: 4,
     name: 'Jackie Sanders',
     designation: 'Investment Planner',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.`
+    review: `Delicious food, great atmosphere, and friendly staff. The desserts were especially amazing. Can't wait to come back!.`
   },
-  {
-    id: 5,
-    name: 'Laura Widerski',
-    designation: 'Sales Specialist',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.`
-  }
 ];

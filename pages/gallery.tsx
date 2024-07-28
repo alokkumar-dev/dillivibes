@@ -11,7 +11,7 @@ import NextLink from 'components/reuseable/links/NextLink';
 import WhatsAppButton from 'components/common/WhatsAppButton';
 // -------- data -------- //
 const images = [
-  '/img/gallery/g1.jpg',
+  // '/img/gallery/g1.jpg',
   '/img/gallery/g2.jpg',
   '/img/gallery/g3.jpg',
   '/img/gallery/g4.jpg',

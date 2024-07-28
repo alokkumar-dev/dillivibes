@@ -103,19 +103,19 @@ export const portfolioList3 = [
 
 // used in the portfolio-5 block
 export const portfolioList4 = [
-  { id: 1, image: 'pf1', title: 'Fringilla Nullam', category: 'drinks events' },
-  { id: 2, image: 'pf2', title: 'Ridiculus Parturient', category: 'events' },
-  { id: 3, image: 'pf3', title: 'Ornare Ipsum', category: 'pastries events' },
-  { id: 4, image: 'pf4', title: 'Nullam Mollis', category: 'events' },
-  { id: 5, image: 'pf5', title: 'Euismod Risus', category: 'pastries events' },
-  { id: 6, image: 'pf6', title: 'Ridiculus Tristique', category: 'foods' },
-  { id: 7, image: 'pf7', title: 'Sollicitudin Pharetra', category: 'foods drinks' },
-  { id: 8, image: 'pf8', title: 'Tristique Venenatis', category: 'pastries' },
-  { id: 9, image: 'pf9', title: 'Cursus Fusce', category: 'events' },
-  { id: 10, image: 'pf10', title: 'Consectetur Malesuada', category: 'foods' },
-  { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'drinks' },
-  { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'foods' },
-  { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'drinks' }
+  { id: 1, image: 'g1', title: 'Fringilla Nullam', category: 'drinks events' },
+  { id: 2, image: 'g2', title: 'Ridiculus Parturient', category: 'events' },
+  { id: 3, image: 'g3', title: 'Ornare Ipsum', category: 'pastries events' },
+  { id: 4, image: 'g4', title: 'Nullam Mollis', category: 'events' },
+  { id: 5, image: 'g5', title: 'Euismod Risus', category: 'pastries events' },
+  { id: 6, image: 'g6', title: 'Ridiculus Tristique', category: 'foods' },
+  { id: 7, image: 'g7', title: 'Sollicitudin Pharetra', category: 'foods drinks' },
+  // { id: 8, image: 'g8', title: 'Tristique Venenatis', category: 'pastries' },
+  // { id: 9, image: 'pf9', title: 'Cursus Fusce', category: 'events' },
+  // { id: 10, image: 'pf10', title: 'Consectetur Malesuada', category: 'foods' },
+  // { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'drinks' },
+  // { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'foods' },
+  // { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'drinks' }
 ];
 
 // used in the portfolio-8 block

@@ -1,42 +1,42 @@
 // Used For - project-1.tsx
 export const projectList1 = [
-  {
-    id: 1,
-    link: '#',
-    category: 'IDEAS',
-    title: 'Cras Fermentum Sem',
-    description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
-    images: [
-      {
-        width: 900,
-        height: 800,
-        url: '/img/birthday/b-1.jpg',
-        tooltip: 'Purus Tellus Magna',
-        full: '/img/birthday/b-1.jpg'
-      },
-      {
-        width: 900,
-        height: 900,
-        url: '/img/birthday/b-2.jpg',
-        full: '/img/birthday/b-2.jpg',
-        tooltip: 'Fusce Ipsum Vestibulum'
-      },
-      {
-        width: 900,
-        height: 718,
-        url: '/img/birthday/b-3.jpg',
-        full: '/img/birthday/b-3.jpg',
-        tooltip: 'Condimentum Parturient Ligula'
-      },
-      {
-        width: 900,
-        height: 700,
-        url: '/img/birthday/b-4.jpg',
-        tooltip: 'Purus Tellus Magna',
-        full: '/img/birthday/b-4.jpg'
-      }
-    ]
-  },
+  // {
+  //   id: 1,
+  //   link: '#',
+  //   category: 'IDEAS',
+  //   title: 'Cras Fermentum Sem',
+  //   description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+  //   images: [
+  //     {
+  //       width: 900,
+  //       height: 800,
+  //       url: '/img/birthday/b-1.jpg',
+  //       tooltip: 'Purus Tellus Magna',
+  //       full: '/img/birthday/b-1.jpg'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 900,
+  //       url: '/img/birthday/b-2.jpg',
+  //       full: '/img/birthday/b-2.jpg',
+  //       tooltip: 'Fusce Ipsum Vestibulum'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 718,
+  //       url: '/img/birthday/b-3.jpg',
+  //       full: '/img/birthday/b-3.jpg',
+  //       tooltip: 'Condimentum Parturient Ligula'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 700,
+  //       url: '/img/birthday/b-4.jpg',
+  //       tooltip: 'Purus Tellus Magna',
+  //       full: '/img/birthday/b-4.jpg'
+  //     }
+  //   ]
+  // },
   {
     id: 2,
     link: '#',

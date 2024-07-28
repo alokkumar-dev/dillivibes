@@ -1,9 +1,10 @@
 import { FC } from 'react';
-import useIsotope from 'hooks/useIsotope';
+// import useIsotope from 'hooks/useIsotope';
 import { portfolioList4 } from 'data/portfolio';
+import Image from 'next/image';
 
 const Portfolio5: FC = () => {
-  const { filterKey, handleFilterKeyChange } = useIsotope();
+  // const { filterKey, handleFilterKeyChange } = useIsotope();
   // filter list
   const filterList = [
     { id: 1, title: 'All', value: '*' },
@@ -11,6 +12,17 @@ const Portfolio5: FC = () => {
     { id: 3, title: 'Drinks', value: '.drinks' },
     { id: 4, title: 'Events', value: '.events' },
     { id: 5, title: 'Pastries', value: '.pastries' }
+  ];
+
+  const images = [
+    '/img/gallery/g1.jpg',
+    '/img/gallery/g2.jpg',
+    '/img/gallery/g3.jpg',
+    '/img/gallery/g4.jpg',
+    '/img/gallery/g5.jpg',
+    '/img/gallery/g6.jpg',
+    '/img/gallery/g7.jpg',
+    '/img/gallery/g8.jpg'
   ];
 
   return (
@@ -25,7 +37,7 @@ const Portfolio5: FC = () => {
           </div>
 
           <div className="grid grid-view projects-masonry">
-            <div className="isotope-filter filter mb-10">
+            {/* <div className="isotope-filter filter mb-10">
               <ul>
                 {filterList.map(({ id, title, value }) => (
                   <li key={id}>
@@ -38,10 +50,10 @@ const Portfolio5: FC = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
-            <div className="row gx-md-6 gy-6 isotope">
-              {portfolioList4.map(({ category, id, image, title }) => (
+            {/* <div className="row gx-md-6 gy-6 isotope">
+              {images.map(({ category, id, image, title }) => (
                 <div className={`project item col-md-6 col-xl-4 ${category}`} key={id}>
                   <figure className="overlay overlay-1 rounded">
                     <a href={`/img/photos/${image}-full.jpg`} data-glightbox data-gallery="shots-group">
@@ -54,7 +66,25 @@ const Portfolio5: FC = () => {
                   </figure>
                 </div>
               ))}
-            </div>
+            </div> */}
+
+            <div className="row mt-22 gx-md-6 gy-6">
+                    {images.map((item) => (
+                      <div className="item col-md-6" key={item}>
+                        <figure className="hover-scale rounded cursor-dark">
+                          <a href={item} data-glightbox data-gallery="project-1">
+                            <Image
+                              width={960}
+                              height={640}
+                              src={item}
+                              alt="demo"
+                              style={{ width: '100%', height: 'auto' }}
+                            />
+                          </a>
+                        </figure>
+                      </div>
+                    ))}
+                  </div>
           </div>
         </div>
       </div>

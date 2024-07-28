@@ -8,18 +8,10 @@ import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink';
 // -------- custom hook -------- //
-import useIsotope from 'hooks/useIsotope';
+// import useIsotope from 'hooks/useIsotope';
 import WhatsAppButton from 'components/common/WhatsAppButton';
 const projectList = [
-  {
-    id: 1,
-    link: '#',
-    color: 'purple',
-    type: 'product',
-    category: 'COSMETIC',
-    title: 'Cras Fermentum Sem',
-    image: { width: 1300, height: 1262, url: '/img/dinings/d1.jpg' }
-  },
+ 
   {
     id: 2,
     link: '#',
@@ -27,7 +19,7 @@ const projectList = [
     type: 'workshop',
     category: 'COFFEE',
     title: 'Mollis Ipsum Mattis',
-    image: { width: 1300, height: 1435, url: '/img/dinings/d2.jpg' }
+    image: { width: 1300, height: 1435, url: '/img/dinings/d1.jpg' }
   },
   {
     id: 3,
@@ -36,26 +28,35 @@ const projectList = [
     type: 'still-life',
     category: 'STILL LIFE',
     title: 'Ipsum Ultricies Cursus',
-    image: { width: 1200, height: 923, url: '/img/dinings/d3.jpg' }
+    image: { width: 1200, height: 923, url: '/img/dinings/d2.jpg' }
   },
+ 
   {
-    id: 4,
+    id: 5,
     link: '#',
-    color: 'yellow',
+    color: 'orange',
     type: 'product',
     category: 'PRODUCT',
-    title: 'Sollicitudin Ornare Porta',
-    image: { width: 1200, height: 919, url: '/img/dinings/d4.jpg' }
+    title: 'Inceptos Euismod Egestas',
+    image: { width: 1300, height: 1365, url: '/img/dinings/d3.jpg' }
   },
-
   {
-    id: 6,
+    id: 5,
     link: '#',
-    color: 'green',
-    type: 'workshop',
-    category: 'WORKSHOP',
-    title: 'Ipsum Mollis Vulputate',
-    image: { width: 1200, height: 960, url: '/img/dinings/d5.jpg' }
+    color: 'orange',
+    type: 'product',
+    category: 'PRODUCT',
+    title: 'Inceptos Euismod Egestas',
+    image: { width: 1300, height: 1365, url: '/img/dinings/d4.jpg' }
+  },
+  {
+    id: 5,
+    link: '#',
+    color: 'orange',
+    type: 'product',
+    category: 'PRODUCT',
+    title: 'Inceptos Euismod Egestas',
+    image: { width: 1300, height: 1365, url: '/img/dinings/d5.jpg' }
   },
   {
     id: 5,
@@ -66,33 +67,6 @@ const projectList = [
     title: 'Inceptos Euismod Egestas',
     image: { width: 1300, height: 1365, url: '/img/dinings/d6.jpg' }
   },
-  {
-    id: 8,
-    link: '#',
-    color: 'red',
-    type: 'concept',
-    category: 'CONCEPT',
-    title: 'Porta Ornare Cras',
-    image: { width: 1200, height: 1200, url: '/img/dinings/d7.jpg' }
-  },
-  {
-    id: 10,
-    link: '#',
-    color: 'purple',
-    type: 'product',
-    category: 'PRODUCT',
-    title: 'Magna Tristique Inceptos',
-    image: { width: 1200, height: 830, url: '/img/dinings/d8.jpg' }
-  },
-  // {
-  //   id: 7,
-  //   link: '#',
-  //   color: 'aqua',
-  //   type: 'concept',
-  //   category: 'CONCEPT',
-  //   title: 'Vulputate Sollicitudin',
-  //   image: { width: 1200, height: 1294, url: '/img/dinings/d1.jpg' }
-  // }
 ];
 
 const filterItems = [
@@ -104,7 +78,7 @@ const filterItems = [
 ];
 
 const ProjectsFour: NextPage = () => {
-  const { handleFilterKeyChange, filterKey } = useIsotope();
+  // const { handleFilterKeyChange, filterKey } = useIsotope();
 
   return (
     <Fragment>
@@ -137,13 +111,14 @@ const ProjectsFour: NextPage = () => {
           <div className="container py-14 py-md-16">
             <div className="grid grid-view projects-masonry">
               {/* ========== filter section ========== */}
-              <div className="isotope-filter filter mb-10">
+              {/* <div className="isotope-filter filter mb-10">
                 <p>Filter:</p>
                 <ul>
                   {filterItems.map(({ id, title, value }) => (
                     <li key={id}>
                       <a
                         onClick={handleFilterKeyChange(value)}
+
                         className={`filter-item ${value === filterKey ? 'active' : ''}`}
                       >
                         {title}
@@ -151,15 +126,15 @@ const ProjectsFour: NextPage = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
               {/* ========== projects section ========== */}
-              <div className="row gx-md-8 gy-10 gy-md-13 isotope">
+              <div className="row gx-md-8 gy-10 gy-md-13">
                 {projectList.map(({ id, image, title, category, color, link, type }) => (
                   <div key={id} className={`project item col-md-6 col-xl-4 ${type}`}>
                     <Link href={link} passHref legacyBehavior>
                       <a>
-                        <figure className="lift rounded mb-6">
+                        <figure className="lift rounded">
                           <Image
                             alt={title}
                             src={image.url}

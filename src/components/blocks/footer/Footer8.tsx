@@ -13,8 +13,7 @@ const Footer8: FC = () => {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              {/* <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" /> */}
-              <h4 className="widget-title text-white mb-3">DILLI VIBES</h4>
+              <img className="mb-4" src={`/img/logo.png`} alt="" />
               <p className="mb-4">
                 © {new Date().getFullYear()} Dilli Vibes <br className="d-none d-lg-block" />
                 All rights reserved.

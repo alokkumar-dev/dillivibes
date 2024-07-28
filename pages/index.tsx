@@ -115,7 +115,7 @@ const Home: NextPage = () => {
         <Banner2 />
 
         {/* ========== portfolio section ========== */}
-        <Portfolio5 />
+        {/* <Portfolio5 /> */}
 
         {/* ========== happy customer section ========== */}
         <Testimonial19 />
