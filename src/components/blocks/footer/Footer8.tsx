@@ -54,18 +54,18 @@ const Footer8: FC = () => {
           <div className="col-md-12 col-lg-3">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Our Newsletter</h4>
-              <p className="mb-5">Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
+              <p className="mb-5">Subscribe to our newsletter to get our meals &amp; delivered to you.</p>
 
               <div className="newsletter-wrapper">
                 <div id="mc_embed_signup2">
-                  <form
+                  {/* <form
                     method="post"
                     target="_blank"
                     className="validate dark-fields"
                     id="mc-embedded-subscribe-form2"
                     name="mc-embedded-subscribe-form"
                     action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
-                  >
+                  > */}
                     <div id="mc_embed_signup_scroll2">
                       <div className="mc-field-group input-group form-floating">
                         <input
@@ -97,7 +97,7 @@ const Footer8: FC = () => {
 
                       <div className="clear" />
                     </div>
-                  </form>
+                  {/* </form> */}
                 </div>
               </div>
             </div>
