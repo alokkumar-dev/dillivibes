@@ -92,9 +92,20 @@
     align-items: center;
   }
   .swiper {
+    .testimonials-card-body{
+      height: 440px;
+    }
+    .testimonials-details{
+     display: flex; 
+     justify-content: space-between;
+    }
     img {
       width: 100%;
       height: auto;
+    }
+    .testimonial-avatar{
+      width: 43px;
+      height: 43px;
     }
   }
   &.nav-color .swiper-button,
