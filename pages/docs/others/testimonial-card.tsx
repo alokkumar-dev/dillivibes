@@ -5,7 +5,6 @@ import {
   TestimonialCard1,
   TestimonialCard2,
   TestimonialCard3,
-  TestimonialCard4,
   TestimonialCard5,
   TestimonialCard6
 } from 'components/reuseable/testimonial-cards';
@@ -19,7 +18,6 @@ import {
   card6Markup
 } from 'markups/others/testimonial-cards';
 // -------- data -------- //
-import { testimonialList2 } from 'data/testimonial-list';
 
 const quickAccess = [
   { title: 'Testimonial Card 1', url: 'snippet-1' },
@@ -104,12 +102,6 @@ const TestimonialCards: FC = () => {
         <h2 className="mb-3">Testimonial Card 2</h2>
 
         <div className="card">
-          <div className="card-body mb-n2">
-            {testimonialList2.slice(0, 1).map((item, i) => (
-              <TestimonialCard2 key={i} {...item} />
-            ))}
-          </div>
-
           <div className="card-footer position-relative">
             <a className="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">
               View example's code
@@ -157,30 +149,6 @@ const TestimonialCards: FC = () => {
         </div>
       </section>
 
-      {/* ========== section 4 ========== */}
-      <section id="snippet-4" className="wrapper pt-16">
-        <h2 className="mb-3">Testimonial Card 4</h2>
-
-        <div className="card">
-          <div className="card-body mb-n2">
-            <TestimonialCard4 />
-          </div>
-
-          <div className="card-footer position-relative">
-            <a className="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-4">
-              View example's code
-            </a>
-          </div>
-
-          <div id="collapse-4" className="card-footer bg-dark p-0 accordion-collapse collapse">
-            <div className="code-wrapper">
-              <div className="code-wrapper-inner">
-                <CodeHighlight language="jsx">{card4Markup}</CodeHighlight>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ========== section 5 ========== */}
       <section id="snippet-5" className="wrapper pt-16">
