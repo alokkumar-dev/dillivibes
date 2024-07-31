@@ -2,6 +2,7 @@ const footerNav = [
   { title: 'Dinings', url: '/dinnings' },
   { title: 'Gallery', url: '/gallery' },
   { title: 'Birth Day', url: '/birthday' },
+  { title: 'Events', url: '/events' },
   { title: 'About Us', url: '/aboutus' },
   { title: 'Contact Us', url: '/contactus' }
 ];

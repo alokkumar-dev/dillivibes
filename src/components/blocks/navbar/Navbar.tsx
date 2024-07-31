@@ -63,6 +63,11 @@ const Navbar: FC<NavbarProps> = (props) => {
                 Birth Day
               </Link>
             </li>
+            <li className="nav-item">
+              <Link href={'/events'} className={`nav-link ${asPath == '/events' ? 'active' : ''}`}>
+                Events
+              </Link>
+            </li>
 
             <li className="nav-item">
               <Link href={'/gallery'} className={`nav-link ${asPath == '/gallery' ? 'active' : ''}`}>

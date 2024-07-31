@@ -27,7 +27,7 @@ const ProjectCard1: FC<ProjectCard1Props> = (props) => {
 
             <div className="post-content">
               <p>{description}</p>
-              <NextLink title="See Project" href={link} className="more hover link-red" />
+              {/* <NextLink title="See Project" href={link} className="more hover link-red" /> */}
             </div>
           </div>
         </div>
