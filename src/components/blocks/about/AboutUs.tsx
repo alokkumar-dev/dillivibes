@@ -28,13 +28,13 @@ const AboutUs: FC = () => {
             </div>
 
             <div className="col-md-8 col-lg-6 order-lg-2 mx-auto">
-              <div className="img-mask mask-2">
+              <div className="img-mask mask-5">
                 <Image
                   width={1000}
                   height={850}
                   src="/img/myimgs/aboutus-img.jpeg"
                   alt=""
-                  style={{ width: '100%', height: 'auto' }}
+                  style={{ width: '100%', height: 'auto',  borderRadius:"15%"}}
                 />
               </div>
             </div>
