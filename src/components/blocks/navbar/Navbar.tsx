@@ -86,6 +86,11 @@ const Navbar: FC<NavbarProps> = (props) => {
                 About Us
               </Link>
             </li>
+            <li className="nav-item">
+              <Link href={'/menu'} className={`nav-link ${asPath == '/menu' ? 'active' : ''}`}>
+                Menu 
+              </Link>
+            </li>
           </ul>
 
           {/* ============= show contact info in the small device sidebar ============= */}
