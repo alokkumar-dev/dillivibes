@@ -3,12 +3,33 @@ import type { NextPage } from 'next';
 import { Navbar } from 'components/blocks/navbar';
 
 const MenuPage: NextPage = () => {
-    const menuItems = [
-        { name: 'Burger', price: '$5.99' },
-        { name: 'Pizza', price: '$8.99' },
-        { name: 'Pasta', price: '$7.49' },
-        { name: 'Salad', price: '$4.99' },
-        { name: 'Soda', price: '$1.99' }
+    const menuSections = [
+        {
+            name: 'Nasta Pani',
+            items: [
+                'Choley Bhature',
+                'Aloo Bedmi Puri',
+                'Pav Bhaji (Extra Pav)',
+                'Veg Sandwich',
+                'Cheese Sandwich',
+                'Grilled Sandwich',
+                'Butter Toast',
+                'Mix Pakora',
+                'Paneer Pakora',
+                'Paneer Bread Pakora'
+            ]
+        },
+        {
+            name: 'Dilli Vibes Parantha',
+            items: [
+                'Aloo Parantha',
+                'Onion Parantha',
+                'Aloo Onion Parantha',
+                'Gobhi Parantha',
+                'Mix Veg Parantha',
+                'Paneer Parantha'
+            ]
+        }
     ];
 
     return (
@@ -21,14 +42,18 @@ const MenuPage: NextPage = () => {
             <main className="content-wrapper">
                 <div className='container'>
                     <h1 className="text-center mb-4">Menu</h1>
-                    <ul className="list-group">
-                        {menuItems.map((item, index) => (
-                            <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
-                                {item.name}
-                                <span className="badge bg-primary rounded-pill">{item.price}</span>
-                            </li>
-                        ))}
-                    </ul>
+                    {menuSections.map((section, sectionIndex) => (
+                        <div key={sectionIndex} className="mb-4">
+                            <h3 className="mb-3">{section.name}</h3>
+                            <ul className="list-group">
+                                {section.items.map((item, itemIndex) => (
+                                    <li key={itemIndex} className="list-group-item">
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
                     <div className="text-center mt-4">
                         <a href="https://drive.google.com/file/d/1Wgu6uWnw4KSktVnuOtaf_Nw2zVSecKuS/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View Full Menu</a>
                     </div>
